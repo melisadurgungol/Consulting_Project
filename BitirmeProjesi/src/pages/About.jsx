@@ -1,10 +1,10 @@
 import React from "react";
+import TopBar from "../components/TopBar";
 
 function About() {
   return (
     <div>
-      <h1>About Us</h1>
-      <p>This is the About page.</p>
+    <TopBar/>
     </div>
   );
 }

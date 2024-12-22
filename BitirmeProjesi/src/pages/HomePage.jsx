@@ -1,12 +1,14 @@
 import React from "react";
+import "../assets/styles/HomePage.css";
+import TopBar from "../components/TopBar";
 
-function HomePage(){
-    return(
-        <div>
-            <h1>Welcome to AskExperts</h1>
-            <p>Your small business growth starts here.</p>
-        </div>
-    );
+
+function HomePage() {
+  return (
+    <div>
+        <TopBar/>
+    </div>
+  );
 }
 
 export default HomePage;
