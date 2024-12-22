@@ -17,6 +17,7 @@ import PasswordProtection from "./pages/PasswordProtection";
 import NotFound404 from "./pages/NotFound404";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import PageHeader from "./components/PageHeader";
 
 function App() {
   return (
