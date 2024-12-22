@@ -59,15 +59,15 @@
 
 .page-header-menu-item.active .dot {
     border: none;
-    background-color: #4eaf4e; /* Aktif sayfa için yeşil nokta */
+    background-color: #4eaf4e; 
 }
 
 .page-header-menu-item.active a {
-    color: #4eaf4e; /* Aktif sayfa için yeşil metin */
+    color: #4eaf4e; 
 }
 
 .page-header-menu-item a:hover {
-    color: #ffcc4a; /* Hover durumunda sarı renk */
+    color: #ffcc4a; 
     text-decoration: none;
 }
 

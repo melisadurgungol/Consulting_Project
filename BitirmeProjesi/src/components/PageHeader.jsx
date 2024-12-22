@@ -5,7 +5,17 @@ import messageIcon from "../assets/images/message-icon.png";
 import telephoneIcon from "../assets/images/telephone-icon.png";
 
 function PageHeader() {
-    const location = useLocation(); // Mevcut URL'yi almak için
+    const location = useLocation(); 
+
+    const handleCallClick = (event) => {
+        event.preventDefault(); 
+        const confirmCall = window.confirm(
+            "Bu numarayı aramak istiyor musunuz? + (888) 452 1505"
+        );
+        if (confirmCall) {
+            window.location.href = "tel:+8884521505";
+        }
+    };
 
     return (
         <div className="page-header">
@@ -58,9 +68,13 @@ function PageHeader() {
                 </ul>
             </div>
             <div className="page-header-call-button">
-                <div className="page-header-call-button-circle">
+                <a
+                    href="tel:+8884521505"
+                    className="page-header-call-button-circle"
+                    onClick={handleCallClick} 
+                >
                     <img src={telephoneIcon} alt="Telephone Icon" />
-                </div>
+                </a>
                 <span>+ (888) 452 1505</span>
             </div>
         </div>
@@ -68,4 +82,3 @@ function PageHeader() {
 }
 
 export default PageHeader;
-
