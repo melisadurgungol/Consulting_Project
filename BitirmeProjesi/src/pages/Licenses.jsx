@@ -1,10 +1,12 @@
 import React from "react";
+import TopBar from "../components/TopBar";
+import PageHeader from "../components/PageHeader";
 
 function Licenses() {
   return (
     <div>
-      <h1>Licenses</h1>
-      <p>Here you can find information about our licenses and terms.</p>
+    <TopBar/>
+    <PageHeader/>
     </div>
   );
 }

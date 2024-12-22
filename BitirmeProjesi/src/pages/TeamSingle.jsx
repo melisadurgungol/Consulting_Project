@@ -1,10 +1,12 @@
 import React from "react";
+import TopBar from "../components/TopBar";
+import PageHeader from "../components/PageHeader";
 
 function TeamSingle() {
   return (
     <div>
-      <h1>Team Member Details</h1>
-      <p>Information about the selected team member.</p>
+    <TopBar/>
+    <PageHeader/>
     </div>
   );
 }

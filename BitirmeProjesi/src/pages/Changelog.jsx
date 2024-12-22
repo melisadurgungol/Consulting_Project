@@ -1,11 +1,13 @@
 import React from "react";
+import TopBar from "../components/TopBar";
+import PageHeader from "../components/PageHeader";
 
 function Changelog(){
-    return(
+    return (
         <div>
-            <h1>Changelog</h1>
-            <p>Here you can find the list of changes and updates.</p>
+        <TopBar/>
+        <PageHeader/>
         </div>
-    );
+      );
 }
 export default Changelog;

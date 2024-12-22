@@ -1,12 +1,14 @@
 import React from "react";
+import TopBar from "../components/TopBar";
+import PageHeader from "../components/PageHeader";
 
 function Blog(){
-    return(
+    return (
         <div>
-            <h1>Blog</h1>
-            <p>Welcome to our blog!</p>
+        <TopBar/>
+        <PageHeader/>
         </div>
-    );
+      );
 }
 
 export default Blog;

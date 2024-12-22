@@ -1,11 +1,13 @@
 import React from "react";
+import TopBar from "../components/TopBar";
+import PageHeader from "../components/PageHeader";
 
 function PasswordProtection(){
-    return(
+    return (
         <div>
-            <h1>Password Protection</h1>
-            <p>This page is password protected. Please enter the correct password.</p>
+        <TopBar/>
+        <PageHeader/>
         </div>
-    );
+      );
 }
 export default PasswordProtection;

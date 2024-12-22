@@ -1,11 +1,13 @@
 import React from "react";
+import TopBar from "../components/TopBar";
+import PageHeader from "../components/PageHeader";
 
 function Contact(){
-    return(
+    return (
         <div>
-            <h1>Contact Us</h1>
-            <p>Get in touch with us.</p>
+        <TopBar/>
+        <PageHeader/>
         </div>
-    );
+      );
 }
 export default Contact;

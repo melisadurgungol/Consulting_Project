@@ -1,11 +1,13 @@
 import React from "react";
+import TopBar from "../components/TopBar";
+import PageHeader from "../components/PageHeader";
 
 function CaseStudySingle(){
-    return(
+    return (
         <div>
-            <h1>Case Study Details</h1>
-            <p>Details of the selected case study.</p>
+        <TopBar/>
+        <PageHeader/>
         </div>
-    );
+      );
 }
 export default CaseStudySingle;

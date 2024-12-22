@@ -1,11 +1,13 @@
 import React from "react";
+import TopBar from "../components/TopBar";
+import PageHeader from "../components/PageHeader";
 
 function BlogSingle(){
-    return(
+    return (
         <div>
-            <h1>Blog Post</h1>
-            <p>This is a single blog  post.</p>
+        <TopBar/>
+        <PageHeader/>
         </div>
-    );   
+      );
 }
 export default BlogSingle;

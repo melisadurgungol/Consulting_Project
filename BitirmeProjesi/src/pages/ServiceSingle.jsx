@@ -1,11 +1,13 @@
 import React from "react";
+import TopBar from "../components/TopBar";
+import PageHeader from "../components/PageHeader";
 
 function ServiceSingle(){
-    return(
+    return (
         <div>
-            <h1>Service Details</h1>
-            <p>Details about the selected service are displayed here.</p>
+        <TopBar/>
+        <PageHeader/>
         </div>
-    );
+      );
 }
 export default ServiceSingle;

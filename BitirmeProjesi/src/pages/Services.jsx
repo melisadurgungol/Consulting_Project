@@ -1,12 +1,14 @@
 import React from "react";
+import TopBar from "../components/TopBar";
+import PageHeader from "../components/PageHeader";
 
 function Services(){
-    return(
+    return (
         <div>
-            <h1>Our Services</h1>
-            <p>Details about our services.</p>
+        <TopBar/>
+        <PageHeader/>
         </div>
-    );
+      );
 }
 
 export default Services;

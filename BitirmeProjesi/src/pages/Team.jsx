@@ -1,10 +1,12 @@
 import React from "react";
+import TopBar from "../components/TopBar";
+import PageHeader from "../components/PageHeader";
 
 function Team() {
   return (
     <div>
-      <h1>Meet Our Team</h1>
-      <p>Get to know the experts behind our success.</p>
+    <TopBar/>
+    <PageHeader/>
     </div>
   );
 }

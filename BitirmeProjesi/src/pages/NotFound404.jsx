@@ -1,11 +1,13 @@
 import React from "react";
+import TopBar from "../components/TopBar";
+import PageHeader from "../components/PageHeader";
 
 function NotFound404(){
-    return(
+    return (
         <div>
-            <h1>404 Not Found</h1>
-            <p>The page you are  looking for does not exist.</p>
+        <TopBar/>
+        <PageHeader/>
         </div>
-    );
+      );
 }
 export default NotFound404;
