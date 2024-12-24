@@ -1,0 +1,63 @@
+
+
+.button-content {
+    display: flex; /* İkon ve metni yan yana koy */
+    align-items: center; /* Dikeyde ortala */
+    gap: 10px; /* İkon ile metin arasındaki boşluk */
+}
+
+.green-circle {
+    width: 43.54px;
+    height: 43.54px;
+    background-color: #4eaf4e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.green-circle img {
+    position: absolute;
+    width: 20px; /* Her bir ikonun boyutu */
+    height: 20px;
+}
+
+.ikonsuz-button{
+    width: 167px;
+    height: 61px;
+    border-radius: 42px;
+    border: none;
+    background-color: #181818;
+    color: #fff;
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.ikonsuz-button:hover {
+    background-color: #ffffff;
+    color: #181818;
+}
+
+
+.ikonlu-button{
+    width: 201px;
+    height: 59px;
+    border-radius: 42px;
+    border:1px solid #ebebeb;
+    background-color: #181818;
+    color: #fff;
+    font-family: 'lato', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
