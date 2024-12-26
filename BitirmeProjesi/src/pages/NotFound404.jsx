@@ -7,6 +7,7 @@ function NotFound404(){
         <div>
         <TopBar/>
         <PageHeader/>
+        <p>burası 404 sayfası hiçbir route ile eşleşmez ise buraya düşer anladımm </p>
         </div>
       );
 }

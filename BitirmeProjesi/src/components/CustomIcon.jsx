@@ -1,4 +1,5 @@
 import React from "react";
+import bookameeting from "../assets/images/bookameeting.png"
 
 function CustomIcon() {
     return (
@@ -7,8 +8,8 @@ function CustomIcon() {
             <div
                 style={{
                     width: "43.54px",
-                    height: "43.54px",
-                    backgroundColor: "#4eaf4e",
+                    height: "48px",
+                    backgroundColor: "transparent",
                     borderRadius: "50%",
                     
                     
@@ -19,12 +20,7 @@ function CustomIcon() {
                     
                 }}
             >
-            {/* <img src="../assets/images/bookameeting1.png" />
-            <img src="../assets/images/bookameeting2.png" />
-            <img src="../assets/images/bookameeting3.png" />
-            <img src="../assets/images/bookameeting4.png" />
-            <img src="../assets/images/bookameeting5.png" />
-            <img src="../assets/images/bookameeting6.png" /> */}
+                <img src={bookameeting} alt="" />
             </div>
         </div>
     );

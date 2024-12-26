@@ -55,3 +55,13 @@
     margin-top: 20px;
     margin-left: -20px;
 }
+
+.client{
+    width: 1805px;
+    height: 89px;
+    margin-left: 78px;
+    display: flex;
+    align-items: center;
+    gap: 132px;
+    
+}

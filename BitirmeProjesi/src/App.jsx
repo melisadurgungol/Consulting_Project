@@ -23,21 +23,21 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/home-2" element={<HomePage2 />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/service-details" element={<ServiceSingle />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/team-single" element={<TeamSingle />} />
-        <Route path="/case-studies" element={<CaseStudies />} />
-        <Route path="/case-study" element={<CaseStudySingle />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog-single" element={<BlogSingle />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/changelog" element={<Changelog />} />
-        <Route path="/licenses" element={<Licenses />} />
-        <Route path="/password-protection" element={<PasswordProtection />} />
+        <Route path="/" exact element={<HomePage />} />
+        <Route path="/home-2" exact element={<HomePage2 />} />
+        <Route path="/about" exact element={<About />} />
+        <Route path="/services" exact element={<Services />} />
+        <Route path="/service-details" exact element={<ServiceSingle />} />
+        <Route path="/team" exact element={<Team />} />
+        <Route path="/team-single" exact element={<TeamSingle />} />
+        <Route path="/case-studies" exact element={<CaseStudies />} />
+        <Route path="/case-study" exact element={<CaseStudySingle />} />
+        <Route path="/blog-single" exact element={<BlogSingle />} />
+        <Route path="/blog" exact element={<Blog />} />
+        <Route path="/contact" exact element={<Contact />} />
+        <Route path="/changelog" exact element={<Changelog />} />
+        <Route path="/licenses" exact element={<Licenses />} />
+        <Route path="/password-protection" exact element={<PasswordProtection />} />
         <Route path="*" element={<NotFound404 />} />
       </Routes>
       <Footer />
