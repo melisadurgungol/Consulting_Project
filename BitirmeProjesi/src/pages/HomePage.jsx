@@ -50,7 +50,8 @@ function HomePage() {
       aboutImage1:{top:"0", right:"0", position:"absolute", zIndex: 2},
       aboutImage2:{position:"absolute", top:"0", left:"0", marginLeft:"485px", marginTop:"136px", zIndex:1},
       aboutImage3:{position:"absolute",top:"0", left:"0",marginLeft:"570px", marginTop:"305px",  zIndex: 4 },
-      aboutMarketExperience:{backgroundColor:"#ffffff", width:"241px", height:"136px", borderRadius:"20px",position:"absolute",top:"0", left:"0",marginLeft:"546px", marginTop:"282px", zIndex: 3 }
+      aboutMarketExperience:{backgroundColor:"#ffffff", width:"241px", height:"136px", borderRadius:"20px",position:"absolute",top:"0", left:"0",marginLeft:"546px", marginTop:"282px", zIndex: 3 },
+
       
   }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/styles/About.css";
 
-function About({ sectionTitle, heading, description,text, image1,image2,image3, stats,styles={}}) {
+function About({ sectionTitle, heading, description,text,text2, image1,image2,image3, stats,styles={}}) {
   return (
     <div className="about-container" style={styles.aboutContainerStyle}>
       <div className="about-left" style={styles.aboutLeftStyle}>
@@ -9,6 +9,7 @@ function About({ sectionTitle, heading, description,text, image1,image2,image3, 
         <h2 className="about-heading" style={styles.aboutHeadingStyle}>{heading}</h2>
         <p className="about-description" style={styles.aboutDescriptionStyle}>{description}</p>
         <p className="about-text" style={styles.aboutTextStyle}>{text}</p>
+        <p className="about-text2" style={styles.aboutText2Style}>{text2}</p>
         <div className="about-stats" style={styles.aboutStatsStyle} >
         {stats.map((stat, index) => (
             <div key={index} className="about-stat-item" style={styles.aboutLeftStatItemStyle}>
@@ -41,7 +42,7 @@ function About({ sectionTitle, heading, description,text, image1,image2,image3, 
           className="about-image" 
           style={styles.aboutImage2}
         />
-        <div className="about-stat-item" style={{backgroundColor:"black"}}>
+        <div className="about-stat-item" style={styles.aboutStatItem}>
             <div className="about-market-experience" style={styles.aboutMarketExperience}></div>
             <img 
               src={image3}
