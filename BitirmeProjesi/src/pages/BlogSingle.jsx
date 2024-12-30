@@ -9,15 +9,16 @@ function BlogSingle(){
         <TopBar/>
         <PageHeader/>
         <Banner
-          title="BLOG"
-          subtitle="Latest Blogs & News"
+          title="September 1, 2022"
+          subtitle="Essential Guidelines To Grow Your Corporate Business With Us"
           image={blogSingleBanner}
           height="744px"
-          contentwidth="553px"
-          contentleft="360px"
-          contentheight="199px"
-          bannertitlewidth="80px"
-          contenttop="143px"
+          contentwidth="838px"
+          contentleft="120px"
+          contentheight="257px"
+          bannertitlewidth="216px"
+          contenttop="239px"
+         
         />
         </div>
     )
