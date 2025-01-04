@@ -20,7 +20,7 @@ function Button({
                 backgroundColor: backgroundColor,
             }}
         >
-            {/* İkon ve metni flex-container ile hizalayalım */}
+            {}
             <div className="button-content">
                 {withIcon && <CustomIcon />}
                 <span className="button-text">{text}</span>

@@ -1,9 +1,9 @@
 
 
 .button-content {
-    display: flex; /* İkon ve metni yan yana koy */
-    align-items: center; /* Dikeyde ortala */
-    gap: 10px; /* İkon ile metin arasındaki boşluk */
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
 }
 
 .green-circle {
@@ -19,7 +19,7 @@
 
 .green-circle img {
     position: absolute;
-    width: 20px; /* Her bir ikonun boyutu */
+    width: 20px; 
     height: 20px;
 }
 

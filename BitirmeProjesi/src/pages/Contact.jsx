@@ -10,7 +10,7 @@ function Contact(){
         <TopBar/>
         <PageHeader/>
         <Banner
-          title="CONTACTUS"
+          title="CONTACT US"
           subtitle="Feel Free To Reach Us"
           image={contactBanner}
           height="536px"

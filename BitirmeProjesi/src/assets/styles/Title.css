@@ -1,0 +1,32 @@
+
+.custom-box {
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px; 
+  border-radius: 20px; 
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffcc00; 
+}
+
+
+@media (max-width: 768px) {
+  .custom-box {
+    font-size: 0.9rem; 
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-box {
+    font-size: 0.8rem; 
+    padding: 6px 12px;
+  }
+}
+

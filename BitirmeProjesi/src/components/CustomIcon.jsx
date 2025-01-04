@@ -4,7 +4,7 @@ import bookameeting from "../assets/images/bookameeting.png"
 function CustomIcon() {
     return (
         <div style={{ position: "relative", display: "inline-block" }}>
-            {/* Yeşil Arka Plan */}
+            {}
             <div
                 style={{
                     width: "43.54px",
