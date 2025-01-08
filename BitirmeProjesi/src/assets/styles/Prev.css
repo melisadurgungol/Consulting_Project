@@ -1,0 +1,47 @@
+.prev-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .prev-button:hover {
+    background-color: #eaeaea; 
+  }
+  
+  .prev-button-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; 
+    color: #fff; 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+  }
+  
+  .prev-button-text {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28.8px;
+    color: #353535;
+  }
+  
+  @media (max-width: 768px) {
+    .prev-button {
+      padding: 8px 16px; 
+      gap: 8px;
+    }
+  
+    .prev-button-text {
+      font-size: 14px; 
+      
+    }
+  }

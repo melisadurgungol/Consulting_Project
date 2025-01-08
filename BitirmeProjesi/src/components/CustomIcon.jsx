@@ -1,29 +1,25 @@
 import React from "react";
-import bookameeting from "../assets/images/bookameeting.png"
+import PropTypes from "prop-types";
 
-function CustomIcon() {
+function CustomIcon({ iconSrc, iconSize = "24px" }) {
     return (
-        <div style={{ position: "relative", display: "inline-block" }}>
-            {}
-            <div
-                style={{
-                    width: "43.54px",
-                    height: "48px",
-                    backgroundColor: "transparent",
-                    borderRadius: "50%",
-                    
-                    
-                    
-                    // display: "flex",
-                    // alignItems: "center",
-                    // justifyContent: "center",
-                    
-                }}
-            >
-                <img src={bookameeting} alt="" />
-            </div>
+        <div
+            style={{
+                width: iconSize,
+                height: iconSize,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+            }}
+        >
+            <img src={iconSrc} alt="icon" style={{ width: "100%", height: "100%" }} />
         </div>
     );
 }
+
+CustomIcon.propTypes = {
+    iconSrc: PropTypes.string.isRequired, // İkonun kaynağı zorunlu
+    iconSize: PropTypes.string, // İkon boyutu
+};
 
 export default CustomIcon;

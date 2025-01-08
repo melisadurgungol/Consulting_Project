@@ -31,6 +31,27 @@ import ConsistencyIcon from "../assets/images/consistency.png";
 import ImprovementIcon from "../assets/images/improvement.png";
 import BranchingIcon from "../assets/images/branching.png";
 import CompanyGrowthIcon from "../assets/images/company-growth.png";
+import BookAMeeting from "../assets/images/bookameeting.png";
+import HoverImageCard from "../components/HoverImageCard";
+import HoverImageCardOne from "../assets/images/hover-img-card-one.png";
+import HoverImageCardTwo from "../assets/images/hover-img-card-two.png";
+import HoverImageCardThree from "../assets/images/hover-img-card-three.png";
+import HoverImageCardFour from "../assets/images/hover-img-card-four.png";
+import HoverImageCardFive from "../assets/images/hover-img-card-five.png";
+import HoverImageCardSix from "../assets/images/hover-img-card-six.png";
+import HoverImageCardPlus from "../assets/images/hover-img-card-plus.png";
+import HoverBackground from "../assets/images/hover-background.png";
+import PrevButton from "../components/Prev";
+import PrevIcon from "../assets/images/prev-icon.png";
+import NextButton from "../components/Next";
+import NextIcon from "../assets/images/next-icon.png";
+import KathleenSmith from "../assets/images/kathleen-smith.png";
+import PhoneNumberButton from "../components/PhoneNumberButton";
+import PhoneIcon from "../assets/images/telephone-icon.png";
+import GreenBox from "../assets/images/green-box.png";
+import YellowShadowBox from "../assets/images/yellow-shadow-box.png";
+import GetControlBox from "../assets/images/get-control-box.png";
+import GrowthAdvisorsBox from "../assets/images/growth-advisors-box.png";
 
 function HomePage() {
 
@@ -114,6 +135,58 @@ function HomePage() {
       
   }
 
+  const hoverCards = [
+    {
+      image: HoverImageCardOne,
+      title: "Taxes & Efficiency",
+      subtitle: "Business",
+      overlayColor: "rgba(0, 0, 0, 0.7)",
+      hoverTextColor: "#ffcc00",
+      icon: HoverImageCardPlus,
+    },
+    {
+      image: HoverImageCardTwo,
+      title: "Financial Planning",
+      subtitle: "Business",
+      overlayColor: "rgba(0, 0, 0, 0.7)",
+      hoverTextColor: "#ffcc00",
+      icon: HoverImageCardPlus,
+    },
+    {    
+      image: HoverImageCardThree,
+      title: "Taxes & Efficiency",
+      subtitle: "Business",
+      overlayColor: "rgba(0, 0, 0, 0.7)",
+      hoverTextColor: "#ffcc00",
+      icon: HoverImageCardPlus,
+    },
+    {
+      image: HoverImageCardFour,
+      title: "Financial Planning",
+      subtitle: "Business",
+      overlayColor: "rgba(0, 0, 0, 0.7)",
+      hoverTextColor: "#ffcc00",
+      icon: HoverImageCardPlus,
+    },
+    {    
+      image: HoverImageCardFive,
+      title: "Taxes & Efficiency",
+      subtitle: "Business",
+      overlayColor: "rgba(0, 0, 0, 0.7)",
+      hoverTextColor: "#ffcc00",
+      icon: HoverImageCardPlus,
+    },
+    {
+      image: HoverImageCardSix,
+      title: "Financial Planning",
+      subtitle: "Business",
+      overlayColor: "rgba(0, 0, 0, 0.7)",
+      hoverTextColor: "#ffcc00",
+      icon: HoverImageCardPlus,
+    }
+    
+  ]
+
   const cards = [
     {
       title: "Consistencyt",
@@ -166,7 +239,8 @@ function HomePage() {
                 text="Our Services"
                 onClick={handleClick}
                 styleClass="ikonsuz-button"
-                withIcon={false} // İkonu ekliyoruz
+                backgroundColor="#181818"
+                withIcon={false} 
             />
                 <Button
                 text="Book a Meeting"
@@ -174,7 +248,10 @@ function HomePage() {
                 styleClass="ikonlu-button"
                 backgroundColor="#fff"
                 color="#353535"
-                withIcon={true} // İkonu ekliyoruz
+                withIcon={true} 
+                iconSrc={BookAMeeting}
+                border="2px solid #ebebeb"
+                iconSize="30px"
             />
                 </div>
 
@@ -285,7 +362,126 @@ function HomePage() {
       </div>
       </div>
       </div>
+
+     
       
+
+    <div className="hover-section">
+    <div className="hover-background" style={{backgroundColor:"#181818"}}><img src={HoverBackground} alt="" style={{width:"100%"}} /></div>
+      <div className="hover-section-header">
+        <Title
+        title="PROCCESS"
+        backgroundColor="#4EAF4E"
+        color="#ffffff"
+        />
+        <h2>Our client, global analytical techno company, wanted to build market.</h2>
+        <Button
+        text="More Gallery"
+        styleClass="more-gallery-button"
+        backgroundColor="#FFCC4A"
+        color="#333"
+        />
+      </div>
+      <div>
+      <div className="hover-image-cards" style={{ display: "flex", gap: "20px", padding: "20px" }}>
+        {hoverCards.map((hoverCard,index) => (
+          <HoverImageCard
+          key={index}
+          image={hoverCard.image}
+          title={hoverCard.title}
+          subtitle={hoverCard.subtitle}
+          overlayColor={hoverCard.overlayColor}
+          hoverTextColor={hoverCard.hoverTextColor}
+          icon={HoverImageCardPlus}
+          />
+        ))}
+      </div>
+      </div>
+
+   
+    </div>
+    <div className="home-counters">
+        <div className="home-counter">
+          <p>1128+</p>
+          <p>Successful Work</p>
+        </div>
+        <div className="home-counter">
+          <p>908+</p>
+          <p>Team Member</p>
+        </div>
+        <div className="home-counter">
+          <p>258+</p>
+          <p>Happy Customers</p>
+        </div>
+        <div className="home-counter">
+          <p>564+</p>
+          <p>Creative Idea</p>
+        </div>
+      </div>
+
+      <div className="client-feedback">
+  <div className="feedback-title">
+    <Title title="CLIENT FEEDBACK" backgroundColor="#4EAF4E" color="#ffffff" />
+    <p className="feedback-description">
+      “Lorem ipsum dolor sit amet, consectetur{" "}
+      <strong style={{ color: "#181818" }}>
+        adipiscing elit, sed do eiusmod
+      </strong>{" "}
+      tempor incididunt ut labore et dolore”
+    </p>
+  </div>
+
+  <div className="feedback-content">
+    <div className="feedback-buttons">
+      <PrevButton
+        icon={<img src={PrevIcon} alt="Prev" />}
+        onClick={handleClick}
+      />
+    </div>
+
+    <div className="feedback-profile">
+      <img src={KathleenSmith} alt="User Profile" className="profile-image" />
+      <h2>Kathleen Smith</h2>
+      <p>Web Designer</p>
+    </div>
+
+    <div className="feedback-buttons">
+      <NextButton
+        icon={<img src={NextIcon} alt="Next" />}
+        onClick={handleClick}
+      />
+    </div>
+  </div>
+  </div>
+
+
+  <div className="consult-banner">
+  <div className="consult-banner-left">
+    <Title title="BOOK NOW" backgroundColor="#4CAF50" color="#ffffff" />
+    <h2>Better Consult, <strong style={{color:"#727272"}}>Better</strong> Results</h2>
+    <p>
+      Our software development agency has a growth up to 30% per each year. If
+      you are result-oriented, not afraid to take initiative – drop us a note
+      and join our team!
+    </p>
+    <div className="consult-phone">
+      <PhoneNumberButton
+        icon={<img src={PhoneIcon} alt="Phone" />}
+        number="+800 1234 654"
+        onClick={handleClick}
+      />
+    </div>
+  </div>
+
+  <div className="consult-banner-right">
+    <img src={AboutUsDot} alt="Banner 1" className="consult-image" />
+    <img src={YellowShadowBox} alt="Banner 2" className="consult-image overlay-image" />
+    <img src={GreenBox} alt="Banner 3" className="consult-image overlay-image" />
+    <img src={GrowthAdvisorsBox} alt="Banner 4" className="consult-image overlay-image" />
+    <img src={GetControlBox} alt="Banner 5" className="consult-image overlay-image" />
+  </div>
+</div>
+
     </div>
 
 

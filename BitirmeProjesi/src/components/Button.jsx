@@ -9,7 +9,10 @@ function Button({
     color = "#fff",
     backgroundColor = "#353535",
     size = "medium",
-    withIcon = false, // İkonlu buton seçeneği
+    withIcon = false, 
+    iconSrc,
+    border,
+    iconSize
 }) {
     return (
         <button
@@ -18,11 +21,11 @@ function Button({
             style={{
                 color: color,
                 backgroundColor: backgroundColor,
+                border: border
             }}
         >
-            {}
             <div className="button-content">
-                {withIcon && <CustomIcon />}
+                {withIcon && <CustomIcon iconSrc={iconSrc} iconSize={iconSize} />}
                 <span className="button-text">{text}</span>
             </div>
         </button>

@@ -39,21 +39,21 @@ const InfoCard = ({
 };
 
 InfoCard.propTypes = {
-  title: PropTypes.string.isRequired, // Başlık zorunlu
-  description: PropTypes.string.isRequired, // Açıklama zorunlu
-  icon: PropTypes.oneOfType([PropTypes.elementType, PropTypes.string]), // İkon (Element veya URL)
-  backgroundColor: PropTypes.string, // Arka plan rengi
-  textColor: PropTypes.string, // Yazı rengi
-  width: PropTypes.string, // Genişlik (örn: "300px" veya "50%")
-  height: PropTypes.string, // Yükseklik (örn: "200px")
+  title: PropTypes.string.isRequired, 
+  description: PropTypes.string.isRequired, 
+  icon: PropTypes.oneOfType([PropTypes.elementType, PropTypes.string]), 
+  backgroundColor: PropTypes.string, 
+  textColor: PropTypes.string, 
+  width: PropTypes.string, 
+  height: PropTypes.string, 
   descriptionColor: PropTypes.string
 };
 
 InfoCard.defaultProps = {
-  backgroundColor: "#f9f9f9", // Varsayılan arka plan rengi
-  textColor: "#333", // Varsayılan yazı rengi
-  width: "300px", // Varsayılan genişlik
-  height: "auto", // Varsayılan yükseklik
+  backgroundColor: "#f9f9f9", 
+  textColor: "#333", 
+  width: "300px", 
+  height: "auto",
 };
 
 export default InfoCard;

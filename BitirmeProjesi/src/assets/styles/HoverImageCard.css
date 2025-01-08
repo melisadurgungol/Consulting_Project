@@ -1,0 +1,123 @@
+.hover-image-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;  
+  justify-content: center;  
+  padding: 20px;  
+}
+
+.hover-image-card {
+  position: relative;  
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  flex: 1 1 calc(33.33% - 20px);  
+  max-width: calc(33.33% - 20px);
+}
+
+.hover-image-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hover-image-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.hover-image-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hover-image-card:hover .hover-image-card-overlay {
+  opacity: 1;
+}
+
+.hover-image-card-text {
+  text-align: left;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  color: #fff;
+}
+
+.hover-image-card-icon {
+  position: absolute;
+  top: 20px;  
+  right: 30px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Diğer elemanların üstünde gö
+}
+
+.hover-image-card:hover .hover-image-card-icon {
+  transform: scale(1.1);  
+}
+
+.hover-image-card-icon img {
+  width: 45px;
+  height: 50px;
+}
+
+.hover-image-card-text h3 {
+  font-family: "Cabin", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.hover-image-card-text p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.6px;
+  color: #ffcc4a;
+}
+
+ 
+@media (max-width: 768px) {
+  .hover-image-card {
+    flex: 1 1 calc(50% - 20px);  
+    max-width: calc(50% - 20px);
+  }
+
+  .hover-image-card-text h3 {
+    font-size: 18px;
+  }
+
+  .hover-image-card-text p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hover-image-card {
+    flex: 1 1 100%;  
+    max-width: 100%;
+  }
+
+  .hover-image-card-text h3 {
+    font-size: 16px;
+  }
+
+  .hover-image-card-text p {
+    font-size: 12px;
+  }
+}
