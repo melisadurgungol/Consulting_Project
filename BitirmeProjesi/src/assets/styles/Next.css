@@ -34,14 +34,33 @@
     color: #353535;
   }
   
+  @media (max-width: 991px) {
+    .next-button {
+      padding: 8px 16px; 
+      gap: 16px;
+    }
+    .next-button-text {
+      font-size: 16px; 
+    }
+
+    .next-button-icon{
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
   @media (max-width: 768px) {
     .next-button {
       padding: 8px 16px; 
-      gap: 8px;
+      gap: 16px;
     }
   
     .next-button-text {
       font-size: 14px; 
-      
+    }
+
+    .next-button-icon{
+      width: 20px;
+      height: 20px;
     }
   }

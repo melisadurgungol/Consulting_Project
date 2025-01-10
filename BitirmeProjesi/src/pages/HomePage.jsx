@@ -52,14 +52,21 @@ import GreenBox from "../assets/images/green-box.png";
 import YellowShadowBox from "../assets/images/yellow-shadow-box.png";
 import GetControlBox from "../assets/images/get-control-box.png";
 import GrowthAdvisorsBox from "../assets/images/growth-advisors-box.png";
+import MoreButton from "../components/MoreButton";
+import BlogLeftImage from "../assets/images/home-blog-content-left-img.png";
+import BlogRightImage from "../assets/images/home-blog-content-right-img.png";
+import JohnCarter from "../assets/images/john-carter.png";
+import NayraMelson from "../assets/images/nayra-melson.png";
+import ContactPhoneIcon from "../assets/images/contact-phone-icon.png";
+import ContactWatchIcon from "../assets/images/contact-watch-icon.png";
+import ContactLocationIcon from "../assets/images/contact-location-icon.png";
 
 function HomePage() {
 
   const handleClick = () => {
     alert("Buton Tıklandı!");
 };
-
-
+ 
   const stats = [
     {
       icon: AboutStar,
@@ -419,7 +426,7 @@ function HomePage() {
         </div>
       </div>
 
-      <div className="client-feedback">
+  <div className="client-feedback">
   <div className="feedback-title">
     <Title title="CLIENT FEEDBACK" backgroundColor="#4EAF4E" color="#ffffff" />
     <p className="feedback-description">
@@ -481,6 +488,137 @@ function HomePage() {
     <img src={GetControlBox} alt="Banner 5" className="consult-image overlay-image" />
   </div>
 </div>
+
+  <div>
+    <div className="blog-section">
+    <div className="blog-header">
+  <div className="header-left">
+    <Title title="BLOG" backgroundColor="#4CAF50" color="#ffffff" />
+    <h2>Take a look at our latest articles & resources</h2>
+  </div>
+  <div className="header-right">
+    <MoreButton
+      text="More News"
+      backgroundColor="#ffcc4a"
+      textColor="#181818"
+      onClick={handleClick}
+    />
+  </div>
+</div>
+
+
+    <div className="blog-content">
+      <div className="blog-card">
+        <img src={BlogLeftImage} alt="" className="blog-card-image"/>
+        <h2 className="blog-card-title">Consulting Fees Study 2019 (And How To Raise Your Rates)</h2>
+        <p className="blog-card-description">Leverage agile frameworks to provide a robust synopsis for high level overviews. 
+          Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+          <div className="line"></div>
+        <div className="blog-card-author">
+        <img src={JohnCarter} alt="" className="author-image"/>
+        <p className="author-name">John Carter&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;September 1, 2022 </p>
+        <MoreButton
+          text="Read More"
+          backgroundColor="#181818"
+          textColor="#fff"
+          onClick={handleClick}
+
+        />
+        </div>
+        <div className="line"></div>
+      </div>
+      <div className="blog-card">
+        <img src={BlogRightImage} alt="" className="blog-card-image"/>
+        <h2 className="blog-card-title">What is growth hacking and how to apply it to your startup</h2>
+        <p className="blog-card-description">Leverage agile frameworks to provide a robust synopsis for high level overviews. 
+          Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+          <div className="line"></div>
+        <div className="blog-card-author">
+        <img src={NayraMelson} alt="" className="author-image"/>
+        <p className="author-name">Nayra Melson&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;September 1, 2022  </p>
+        <MoreButton 
+          text="Read More"
+          backgroundColor="#fff"
+          textColor="#181818"
+          onClick={handleClick}
+          border="1px solid #c1c1c1"
+        />
+        </div>
+        <div className="line"></div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+    <div className="contact-section">
+        <div className="contact-left">
+        <Title title="PROCCESS" backgroundColor="#FFCC4A" color="#181818" />
+          <h2>Contact Us. It’s Easy.</h2>
+          <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to
+          corporate strategy foster collaborative.</p>
+          <div className="contact-info">
+          <div className="info-item">
+            <img src={ContactPhoneIcon} alt="" />
+            <div className="info-text">
+            <span>Call Today</span>
+            <span>+1 800 100 900</span>
+            </div>
+          </div>
+          <div className="info-item">
+            <img src={ContactWatchIcon} alt="" />
+            <div className="info-text"> 
+            <span>Monday To Friday</span>
+            <span>9AM - 5PM</span>
+            </div>
+          </div>
+          <div className="info-item">
+            <img src={ContactLocationIcon} alt="" />
+            <div className="info-text">
+            <span>USA Office</span>
+            <span>195 Devonshire St Boston, MA 02110</span>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="contact-right">
+  <form class="contact-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="john david" />
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="consult@mail.com" />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="text" placeholder="+008 654 231" />
+      </div>
+      <div class="form-group">
+        <label>Company (optional)</label>
+        <input type="text" placeholder="yourcompany.com" />
+      </div>
+    </div>
+    <div class="form-row">
+      <label>Message</label>
+      <textarea placeholder="Briefly tell us about your project and your current goals. How can we help you?"></textarea>
+    </div>
+    <MoreButton 
+      text="Send Message"
+      backgroundColor="#181818"
+      textColor="#fff"
+      onClick={handleClick}
+    />
+  </form>
+</div>
+
+    </div>
+
+
 
     </div>
 

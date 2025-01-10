@@ -33,15 +33,34 @@
     line-height: 28.8px;
     color: #353535;
   }
+
+  @media (max-width: 991px) {
+    .prev-button {
+      padding: 8px 16px; 
+      gap: 16px;
+    }
+    .prev-button-text {
+      font-size: 16px; 
+    }
+
+    .prev-button-icon{
+      width: 30px;
+      height: 30px;
+    }
+  }
   
   @media (max-width: 768px) {
     .prev-button {
       padding: 8px 16px; 
-      gap: 8px;
+      gap: 16px;
     }
   
     .prev-button-text {
       font-size: 14px; 
-      
+    }
+
+    .prev-button-icon{
+      width: 20px;
+      height: 20px;
     }
   }
