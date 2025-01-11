@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/styles/HomePage.css";
-import TopBar from "../components/TopBar";
+import TopPanel from "../components/TopPanel";
 import PageHeader from "../components/PageHeader";
 import Button from "../components/Button";
 import Client1 from "../assets/images/client1.png";
@@ -235,7 +235,7 @@ function HomePage() {
 
   return (
     <div>
-        <TopBar/>
+        <TopPanel/>
         <PageHeader/>
         <div className="home-banner">
             <div className="home-banner-content">

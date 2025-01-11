@@ -1,5 +1,5 @@
 import React from "react";
-import TopBar from "../components/TopBar";
+import TopPanel from "../components/TopPanel";
 import PageHeader from "../components/PageHeader";
 import Banner from "../components/Banner";
 import aboutBanner from "../assets/images/about-banner.png"
@@ -39,7 +39,7 @@ function AboutPage() {
 
   return (
     <div>
-    <TopBar/>
+    <TopPanel/>
     <PageHeader/>
     <Banner
       title="SERVİCES"

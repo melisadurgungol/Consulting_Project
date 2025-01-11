@@ -1,5 +1,5 @@
 import React from "react";
-import TopBar from "../components/TopBar";
+import TopPanel from "../components/TopPanel";
 import PageHeader from "../components/PageHeader";
 import Banner from "../components/Banner";
 import licensesBanner from "../assets/images/licenses-banner.png"
@@ -7,7 +7,7 @@ import licensesBanner from "../assets/images/licenses-banner.png"
 function Licenses() {
   return (
     <div>
-    <TopBar/>
+    <TopPanel/>
     <PageHeader/>
     <Banner
           title="LİCENSES"

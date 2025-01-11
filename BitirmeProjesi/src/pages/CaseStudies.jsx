@@ -1,5 +1,5 @@
 import React from "react";
-import TopBar from "../components/TopBar";
+import TopPanel from "../components/TopPanel";
 import PageHeader from "../components/PageHeader";
 
 
@@ -7,7 +7,7 @@ import PageHeader from "../components/PageHeader";
 function CaseStudies(){
     return (
         <div>
-        <TopBar/>
+        <TopPanel/>
         <PageHeader/>
         
         </div>

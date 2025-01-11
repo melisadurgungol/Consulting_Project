@@ -1,12 +1,12 @@
 import React from "react";
-import TopBar from "../components/TopBar";
+import TopPanel from "../components/TopPanel";
 import PageHeader from "../components/PageHeader";
 import Banner from "../components/Banner";
 import blogSingleBanner from "../assets/images/blogsingle-banner.png"
 function BlogSingle(){
     return(
         <div>
-        <TopBar/>
+        <TopPanel/>
         <PageHeader/>
         <Banner
           title="September 1, 2022"

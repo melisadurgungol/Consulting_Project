@@ -1,5 +1,5 @@
 import React from "react";
-import TopBar from "../components/TopBar";
+import TopPanel from "../components/TopPanel";
 import PageHeader from "../components/PageHeader";
 import Banner from "../components/Banner";
 import contactBanner from "../assets/images/contact-banner.png"
@@ -7,7 +7,7 @@ import contactBanner from "../assets/images/contact-banner.png"
 function Contact(){
     return (
         <div>
-        <TopBar/>
+        <TopPanel/>
         <PageHeader/>
         <Banner
           title="CONTACT US"

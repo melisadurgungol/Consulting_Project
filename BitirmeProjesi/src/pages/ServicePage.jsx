@@ -1,5 +1,5 @@
 import React from "react";
-import TopBar from "../components/TopBar";
+import TopPanel from "../components/TopPanel";
 import PageHeader from "../components/PageHeader";
 import Banner from "../components/Banner";
 import servicesBanner from "../assets/images/services-banner.png"
@@ -52,7 +52,7 @@ function ServicePage(){
   ];
     return (
         <div>
-        <TopBar/>
+        <TopPanel/>
         <PageHeader/>
         <Banner
           title="SERVİCES"

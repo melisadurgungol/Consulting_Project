@@ -1,5 +1,5 @@
 import React from "react";
-import TopBar from "../components/TopBar";
+import TopPanel from "../components/TopPanel";
 import PageHeader from "../components/PageHeader";
 import Banner from "../components/Banner";
 import serviceSingleBanner from "../assets/images/servicesingle-banner.png";
@@ -55,7 +55,7 @@ function ServiceSingle() {
 
   return (
     <div>
-      <TopBar />
+      <TopPanel/>
       <PageHeader />
       <Banner
         title="SERVICESINGLE"

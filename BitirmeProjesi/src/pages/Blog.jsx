@@ -1,5 +1,5 @@
 import React from "react";
-import TopBar from "../components/TopBar";
+import TopPanel from "../components/TopPanel";
 import PageHeader from "../components/PageHeader";
 import Banner from "../components/Banner";
 import blogBanner from "../assets/images/blog-banner.png"
@@ -7,7 +7,7 @@ import blogBanner from "../assets/images/blog-banner.png"
 function Blog(){
     return (
         <div>
-        <TopBar/>
+        <TopPanel/>
         <PageHeader/>
         <Banner
           title="BLOG"

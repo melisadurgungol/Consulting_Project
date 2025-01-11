@@ -1,5 +1,5 @@
 import React from "react";
-import TopBar from "../components/TopBar";
+import TopPanel from "../components/TopPanel";
 import PageHeader from "../components/PageHeader";
 import Banner from "../components/Banner";
 import teamBanner from "../assets/images/team-banner.png"
@@ -8,7 +8,7 @@ import teamBanner from "../assets/images/team-banner.png"
 function Team() {
   return (
     <div>
-    <TopBar/>
+    <TopPanel/>
     <PageHeader/>
     <Banner
           title="TEAM"

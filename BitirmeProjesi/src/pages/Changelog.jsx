@@ -1,5 +1,5 @@
 import React from "react";
-import TopBar from "../components/TopBar";
+import TopPanel from "../components/TopPanel";
 import PageHeader from "../components/PageHeader";
 import Banner from "../components/Banner";
 import changelogBanner from "../assets/images/changelog-banner.png"
@@ -7,7 +7,7 @@ import changelogBanner from "../assets/images/changelog-banner.png"
 function Changelog(){
     return (
         <div>
-        <TopBar/>
+        <TopPanel/>
         <PageHeader/>
         <Banner
           title="UPDATES"

@@ -1,11 +1,11 @@
 import React from "react";
-import TopBar from "../components/TopBar";
+import TopPanel from "../components/TopPanel";
 import PageHeader from "../components/PageHeader";
 
 function NotFound404(){
     return (
         <div>
-        <TopBar/>
+        <TopPanel/>
         <PageHeader/>
         <p>burası 404 sayfası hiçbir route ile eşleşmez ise buraya düşer anladımm </p>
         </div>
