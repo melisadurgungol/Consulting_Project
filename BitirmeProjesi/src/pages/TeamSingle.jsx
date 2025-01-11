@@ -1,13 +1,13 @@
 import React from "react";
 import TopPanel from "../components/TopPanel";
-import PageHeader from "../components/PageHeader";
+import HeaderPanel from "../components/HeaderPanel";
 
 
 function TeamSingle() {
   return (
     <div>
     <TopPanel/>
-    <PageHeader/>
+    <HeaderPanel/>
     </div>
   );
 }

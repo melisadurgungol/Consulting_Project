@@ -1,6 +1,6 @@
 import React from "react";
 import TopPanel from "../components/TopPanel";
-import PageHeader from "../components/PageHeader";
+import HeaderPanel from "../components/HeaderPanel";
 import Banner from "../components/Banner";
 import servicesBanner from "../assets/images/services-banner.png"
 import Services from "../components/Services";
@@ -53,7 +53,7 @@ function ServicePage(){
     return (
         <div>
         <TopPanel/>
-        <PageHeader/>
+        <HeaderPanel/>
         <Banner
           title="SERVİCES"
           subtitle="Creative Services For Boost Your Business Growth"

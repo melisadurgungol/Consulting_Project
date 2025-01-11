@@ -1,13 +1,13 @@
 import React from "react";
 import TopPanel from "../components/TopPanel";
-import PageHeader from "../components/PageHeader";
+import HeaderPanel from "../components/HeaderPanel";
 import Banner from "../components/Banner";
 import blogSingleBanner from "../assets/images/blogsingle-banner.png"
 function BlogSingle(){
     return(
         <div>
         <TopPanel/>
-        <PageHeader/>
+        <HeaderPanel/>
         <Banner
           title="September 1, 2022"
           subtitle="Essential Guidelines To Grow Your Corporate Business With Us"

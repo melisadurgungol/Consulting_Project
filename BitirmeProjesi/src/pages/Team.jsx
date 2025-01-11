@@ -1,6 +1,6 @@
 import React from "react";
 import TopPanel from "../components/TopPanel";
-import PageHeader from "../components/PageHeader";
+import HeaderPanel from "../components/HeaderPanel";
 import Banner from "../components/Banner";
 import teamBanner from "../assets/images/team-banner.png"
 
@@ -9,7 +9,7 @@ function Team() {
   return (
     <div>
     <TopPanel/>
-    <PageHeader/>
+    <HeaderPanel/>
     <Banner
           title="TEAM"
           subtitle="The Consultors"

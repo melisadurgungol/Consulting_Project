@@ -1,6 +1,6 @@
 import React from "react";
 import TopPanel from "../components/TopPanel";
-import PageHeader from "../components/PageHeader";
+import HeaderPanel from "../components/HeaderPanel";
 import Banner from "../components/Banner";
 import serviceSingleBanner from "../assets/images/servicesingle-banner.png";
 import InfoCard from "../components/InfoCard";
@@ -56,7 +56,7 @@ function ServiceSingle() {
   return (
     <div>
       <TopPanel/>
-      <PageHeader />
+      <HeaderPanel/>
       <Banner
         title="SERVICESINGLE"
         subtitle="Services Details"

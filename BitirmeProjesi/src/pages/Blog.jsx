@@ -1,6 +1,6 @@
 import React from "react";
 import TopPanel from "../components/TopPanel";
-import PageHeader from "../components/PageHeader";
+import HeaderPanel from "../components/HeaderPanel";
 import Banner from "../components/Banner";
 import blogBanner from "../assets/images/blog-banner.png"
 
@@ -8,7 +8,7 @@ function Blog(){
     return (
         <div>
         <TopPanel/>
-        <PageHeader/>
+        <HeaderPanel/>
         <Banner
           title="BLOG"
           subtitle="Latest Blogs & News"

@@ -1,6 +1,6 @@
 import React from "react";
 import TopPanel from "../components/TopPanel";
-import PageHeader from "../components/PageHeader";
+import HeaderPanel from "../components/HeaderPanel";
 import Banner from "../components/Banner";
 import changelogBanner from "../assets/images/changelog-banner.png"
 
@@ -8,7 +8,7 @@ function Changelog(){
     return (
         <div>
         <TopPanel/>
-        <PageHeader/>
+        <HeaderPanel/>
         <Banner
           title="UPDATES"
           subtitle="Changelog"

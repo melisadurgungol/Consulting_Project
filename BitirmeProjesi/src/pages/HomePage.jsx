@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/styles/HomePage.css";
 import TopPanel from "../components/TopPanel";
-import PageHeader from "../components/PageHeader";
+import HeaderPanel from "../components/HeaderPanel";
 import Button from "../components/Button";
 import Client1 from "../assets/images/client1.png";
 import Client2 from "../assets/images/client2.png";
@@ -236,7 +236,7 @@ function HomePage() {
   return (
     <div>
         <TopPanel/>
-        <PageHeader/>
+        <HeaderPanel/>
         <div className="home-banner">
             <div className="home-banner-content">
                 <p className="home-banner-text1">Your small business growth advisors</p>

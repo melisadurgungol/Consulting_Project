@@ -1,0 +1,138 @@
+
+.header-panel {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 40px; 
+    background-color: rgba(27, 27, 27, 0.91);
+    color: #ffffff; 
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  .header-panel-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1450px; 
+    width: calc(100% - 40px); 
+    margin: 0 auto; 
+  }
+ 
+  .header-panel-left {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    
+  }
+  
+  .experts-logo {
+    width: 30px; 
+    height: 30px; 
+  }
+  
+  .experts-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 31.5px;
+  }
+  
+ 
+.header-panel-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-menu {
+    display: flex; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    gap: 40px; 
+  }
+  
+  .header-menu-item {
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
+    font-size: 17.73px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 28.36px;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    white-space: nowrap; 
+  }
+  
+  .header-menu-item a {
+    text-decoration: none; 
+    color: #ffffff; 
+    transition: color 0.3s ease; 
+  }
+
+  .header-menu-item .dot {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border: 1px solid #515151;
+    border-radius: 50%;
+  }
+  
+  .header-menu-item.active a {
+    color: #4eaf4e; 
+  }
+
+  
+  .header-menu-item.active .dot {
+    background-color: #4eaf4e;
+    border: 1px solid #4eaf4e;
+  }
+  
+  .header-menu-item:hover {
+    color: #ffcc4a; 
+  }
+  
+  
+ 
+  .header-panel-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone-number-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  .phone-number-button img {
+    width: 45px;
+    height: 45px;
+    
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .header-panel {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .page-header-menu {
+      flex-wrap: wrap; 
+      justify-content: center;
+    }
+  
+    .phone-number-button {
+      width: 100%; 
+      justify-content: center;
+    }
+  }
+  

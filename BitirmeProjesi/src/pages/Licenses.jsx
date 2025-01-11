@@ -1,6 +1,6 @@
 import React from "react";
 import TopPanel from "../components/TopPanel";
-import PageHeader from "../components/PageHeader";
+import HeaderPanel from "../components/HeaderPanel";
 import Banner from "../components/Banner";
 import licensesBanner from "../assets/images/licenses-banner.png"
 
@@ -8,7 +8,7 @@ function Licenses() {
   return (
     <div>
     <TopPanel/>
-    <PageHeader/>
+    <HeaderPanel/>
     <Banner
           title="LİCENSES"
           subtitle="All asset's Licenses"

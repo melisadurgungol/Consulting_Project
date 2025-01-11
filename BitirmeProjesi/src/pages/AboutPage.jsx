@@ -1,6 +1,6 @@
 import React from "react";
 import TopPanel from "../components/TopPanel";
-import PageHeader from "../components/PageHeader";
+import HeaderPanel from "../components/HeaderPanel";
 import Banner from "../components/Banner";
 import aboutBanner from "../assets/images/about-banner.png"
 import About from "../components/About";
@@ -40,7 +40,7 @@ function AboutPage() {
   return (
     <div>
     <TopPanel/>
-    <PageHeader/>
+    <HeaderPanel/>
     <Banner
       title="SERVİCES"
       subtitle="Creative Services For Boost Your Business Growth"
