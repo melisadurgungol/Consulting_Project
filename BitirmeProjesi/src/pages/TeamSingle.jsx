@@ -8,6 +8,7 @@ function TeamSingle() {
     <div>
     <TopPanel/>
     <HeaderPanel/>
+
     </div>
   );
 }

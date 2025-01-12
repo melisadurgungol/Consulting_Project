@@ -1,25 +1,28 @@
 import React from "react";
 import TopPanel from "../components/TopPanel";
 import HeaderPanel from "../components/HeaderPanel";
-import Banner from "../components/Banner";
-import blogBanner from "../assets/images/blog-banner.png"
+import "../assets/styles/BlogPage.css";
+import Title from "../components/Title";
 
 function Blog(){
     return (
         <div>
         <TopPanel/>
         <HeaderPanel/>
-        <Banner
-          title="BLOG"
-          subtitle="Latest Blogs & News"
-          image={blogBanner}
-          height="487px"
-          contentwidth="553px"
-          contentleft="360px"
-          contentheight="199px"
-          bannertitlewidth="80px"
-          contenttop="143px"
-        />
+        
+
+        <div className="blog-banner-section">
+          <div className="blog-banner-background">
+            <div className="blog-banner-content">
+              <Title title="BLOG" backgroundColor="#FFCC4A" color="#181818" />
+              <h2 className="blog-banner-heading">
+              Latest Blogs & News
+              </h2>
+            </div>
+          </div>
+        </div>
+
+
         </div>
         
       );

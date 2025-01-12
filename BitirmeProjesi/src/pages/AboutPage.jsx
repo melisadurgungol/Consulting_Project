@@ -1,13 +1,13 @@
 import React from "react";
 import TopPanel from "../components/TopPanel";
 import HeaderPanel from "../components/HeaderPanel";
-import Banner from "../components/Banner";
-import aboutBanner from "../assets/images/about-banner.png"
+import "../assets/styles/AboutPage.css";
 import About from "../components/About";
 import OurVisionDot from "../assets/images/aboutus-dot-image.png";
 import OurVisionPeople from "../assets/images/ourvision-people-image.png";
 import OurVisionOk from "../assets/images/ourvision-ok.png";
 import OurVisionOk2 from "../assets/images/ourvision-ok2.png";
+import Title from "../components/Title";
 
 function AboutPage() {
 
@@ -41,12 +41,19 @@ function AboutPage() {
     <div>
     <TopPanel/>
     <HeaderPanel/>
-    <Banner
-      title="SERVİCES"
-      subtitle="Creative Services For Boost Your Business Growth"
-      image={aboutBanner}
-      height="620px"
-    />
+    
+    <div className="about-banner-section">
+  {/* Arka Plan Görseli */}
+  <div className="about-banner-background">
+    <div className="about-banner-content">
+      <Title title="SERVICES" backgroundColor="#FFCC4A" color="#181818" />
+      <h2 className="about-banner-heading">
+        Creative Services For Boost Your Business Growth
+      </h2>
+    </div>
+  </div>
+</div>
+
     <About
       sectionTitle="OUR VİSİON" 
       heading="Turn your ideas into reality."

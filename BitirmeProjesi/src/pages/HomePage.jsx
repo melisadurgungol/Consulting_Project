@@ -31,7 +31,7 @@ import ConsistencyIcon from "../assets/images/consistency.png";
 import ImprovementIcon from "../assets/images/improvement.png";
 import BranchingIcon from "../assets/images/branching.png";
 import CompanyGrowthIcon from "../assets/images/company-growth.png";
-import BookAMeeting from "../assets/images/bookameeting.png";
+import BookAMeetingImage from "../assets/images/bookameeting.png";
 import HoverImageCard from "../components/HoverImageCard";
 import HoverImageCardOne from "../assets/images/hover-img-card-one.png";
 import HoverImageCardTwo from "../assets/images/hover-img-card-two.png";
@@ -60,6 +60,7 @@ import NayraMelson from "../assets/images/nayra-melson.png";
 import ContactPhoneIcon from "../assets/images/contact-phone-icon.png";
 import ContactWatchIcon from "../assets/images/contact-watch-icon.png";
 import ContactLocationIcon from "../assets/images/contact-location-icon.png";
+import BookAMeeting from "../components/BookAMeeting";
 
 function HomePage() {
 
@@ -237,33 +238,35 @@ function HomePage() {
     <div>
         <TopPanel/>
         <HeaderPanel/>
-        <div className="home-banner">
-            <div className="home-banner-content">
-                <p className="home-banner-text1">Your small business growth advisors</p>
-                <p className="home-banner-text2">Get help from Alex Moore, a professional business coach with <br />advanced experience on growth and business scaling.</p>
-                <div className="home-banner-button-container">
-                <Button
-                text="Our Services"
-                onClick={handleClick}
-                styleClass="ikonsuz-button"
-                backgroundColor="#181818"
-                withIcon={false} 
-            />
-                <Button
-                text="Book a Meeting"
-                onClick={handleClick}
-                styleClass="ikonlu-button"
-                backgroundColor="#fff"
-                color="#353535"
-                withIcon={true} 
-                iconSrc={BookAMeeting}
-                border="2px solid #ebebeb"
-                iconSize="30px"
-            />
-                </div>
 
-            </div>
-        </div>
+        <div className="home-banner-section">
+  {/* Arka Plan Görseli */}
+  <div className="home-banner-background">
+    <div className="home-banner-content">
+      <h2 className="home-banner-heading">
+      Your small business growth advisors
+      </h2>
+      <p className="home-banner-text">Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+
+      <div className="home-banner-button">
+        <MoreButton
+          text="Our Services"
+          backgroundColor="#181818"
+          textColor="#fff"
+          onClick={handleClick}
+          
+        />
+        <BookAMeeting
+          text="Book a Meeting"
+          backgroundColor="#fff"
+          textColor="#181818"
+          onClick={handleClick}
+          icon={<img src={BookAMeetingImage} alt="Icon" style={{ width: "40px", height: "40px" }} />}
+        />
+      </div>
+    </div>
+  </div>
+</div>
 
         <div className="client">
           <div style={{width:"205.42px", height:"54px"}}><img src={Client1} alt="" style={{height:"40px", marginTop:"10px"}} /></div>

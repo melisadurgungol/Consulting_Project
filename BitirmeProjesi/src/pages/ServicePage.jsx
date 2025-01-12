@@ -1,8 +1,8 @@
 import React from "react";
 import TopPanel from "../components/TopPanel";
 import HeaderPanel from "../components/HeaderPanel";
-import Banner from "../components/Banner";
-import servicesBanner from "../assets/images/services-banner.png"
+import "../assets/styles/ServicesPage.css";
+import Title from "../components/Title";
 import Services from "../components/Services";
 import ServicesIcon1 from "../assets/images/services-icon1.png";
 import ServicesIcon2 from "../assets/images/services-icon2.png";
@@ -54,12 +54,20 @@ function ServicePage(){
         <div>
         <TopPanel/>
         <HeaderPanel/>
-        <Banner
-          title="SERVİCES"
-          subtitle="Creative Services For Boost Your Business Growth"
-          image={servicesBanner}
-          height="620px"
-    />
+
+
+        <div className="service-banner-section">
+  <div className="service-banner-background">
+    <div className="service-banner-content">
+      <Title title="SERVICES" backgroundColor="#FFCC4A" color="#181818" />
+      <h2 className="service-banner-heading">
+        Creative Services For Boost Your Business Growth
+      </h2>
+    </div>
+  </div>
+</div>
+
+
     <Services
           headerText="Get Control Over Your Business I take your finance to next level"
           contentTitle="Services"

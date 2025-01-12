@@ -1,23 +1,26 @@
 import React from "react";
 import TopPanel from "../components/TopPanel";
 import HeaderPanel from "../components/HeaderPanel";
-import Banner from "../components/Banner";
-import licensesBanner from "../assets/images/licenses-banner.png"
+import "../assets/styles/LicensesPage.css";
+import Title from "../components/Title";
 
 function Licenses() {
   return (
     <div>
     <TopPanel/>
     <HeaderPanel/>
-    <Banner
-          title="LİCENSES"
-          subtitle="All asset's Licenses"
-          image={licensesBanner}
-          height="536px"
-          contentwidth="521px"
-          contentheight="199px"
-          contentleft="360px"
-    />
+  
+    <div className="licenses-banner-section">
+          <div className="licenses-banner-background">
+            <div className="licenses-banner-content">
+              <Title title="LICENSES" backgroundColor="#FFCC4A" color="#181818" />
+              <h2 className="licenses-banner-heading">
+              All asset's Licenses
+              </h2>
+            </div>
+          </div>
+        </div>
+
     </div>
   );
 }

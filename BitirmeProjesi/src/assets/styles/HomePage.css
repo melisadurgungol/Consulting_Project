@@ -1,60 +1,104 @@
-.home-banner{
-    width: 100%;
-    height: 834px;
-    background-image: url('../images/homepage-banner-.png');
-    position: relative;
+.home-banner-section {
+  width: 100%; 
+  height: auto;
+  position: relative; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  overflow: hidden;
 }
 
-.home-banner-content{
-    position: absolute;
-    width: 551px;
-    height: 395px;
-    top: 260px;
-    left: 197px;
-    background: rgba(255,255,255,0.8);
-    backdrop-filter: blur(11px);
-    -webkit-backdrop-filter: blur(11px);
-    border-radius: 29px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.home-banner-background {
+  width: 100%; 
+  height: auto; 
+  aspect-ratio: 2.3;
+  background-image: url("../images/homepage-banner-.png"); 
+  background-repeat: no-repeat; 
+  background-size: contain; 
+  position: relative;
 }
 
-.home-banner-text1{
-    font-family: 'cabin',sans-serif;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 58px;
-    color: #181818;
-    margin-left: 58px;
-    margin-top: -30px;
-    margin-bottom: 19px;
-    text-align: left;
+.home-banner-content {
+  position: absolute; 
+  top: 40%; 
+  left: 15%; 
+  transform: translate(0, -50%); 
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 40px 40px; 
+  border-radius: 29px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
-.home-banner-text2{
-    font-family: 'lato',sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23.6px;
-    color: #595566;
-    text-align: center;
-    text-align: left;
-    margin-left: 30px;
-    margin-bottom: 18px;
-
+.home-banner-button{
+  display: flex; 
+  align-items: center; 
+  gap: 20px; 
 }
 
-.home-banner-button-container{
-    display: flex;
-    justify-content: center;
-    gap: 13px;
-    margin-top: 20px;
-    margin-left: -20px;
+
+.home-banner-content .title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase; 
+  margin-bottom: 10px; 
 }
+
+.home-banner-heading {
+  font-family: "Cabin", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #181818;
+  margin: 10px 0;
+  word-wrap: break-word;
+  max-width: 450px;
+  line-height: 58px;
+}
+
+.home-banner-text{
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #595566;
+  margin: 20px 0;
+  word-wrap: break-word;
+  max-width: 450px;
+  line-height: 23.6px;
+}
+
+
+@media (max-width: 1024px) {
+  .home-banner-content {
+    top: 35%;
+    left: 15%; 
+    max-width: 500px; 
+    padding: 15px 10px;
+    font-size: 14px; 
+    line-height: 48px; 
+  }
+
+  .home-banner-heading {
+    font-size: 40px; 
+    line-height: 48px; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .home-banner-content {
+    top: 35%; 
+    left: 10%; 
+    max-width: 90%; 
+    padding: 5px 10px;
+  }
+
+  .home-banner-heading {
+    font-size: 30px; 
+    line-height: 36px; 
+    max-width: 400px;
+  }
+}
+
+
 
 .client{
     width: 1805px;

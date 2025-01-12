@@ -1,8 +1,9 @@
-.more-button {
+.book-meeting {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 40px;
+    padding: 3px 20px;
+    gap: 10px;
     border: none;
     border-radius: 50px;
     font-family: "Lato", sans-serif;
@@ -11,23 +12,26 @@
     line-height: 28.8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: auto;
+    width: auto; 
+  }
+
+  .button-icon{
+    margin-left: -5px;
+    margin-top: 5px;
   }
 
   
 
 
   @media (max-width: 768px) {
-    .more-button {
+    .book-meeting {
       font-size: 16px;
-      padding: 8px 16px;
+      padding: 1px 14px;
     }
-  }
-  
-  @media (max-width: 480px) {
-    .more-button {
-      font-size: 12px;
-      padding: 6px 12px;
+
+    .button-icon{
+      margin-left: -5px;
+      margin-top: 1px;
     }
   }
   

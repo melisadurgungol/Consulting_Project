@@ -62,7 +62,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2; /* Diğer elemanların üstünde gö
+  z-index: 2; 
 }
 
 .hover-image-card:hover .hover-image-card-icon {

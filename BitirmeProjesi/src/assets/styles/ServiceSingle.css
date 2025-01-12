@@ -1,9 +1,110 @@
+.service-single-banner-section {
+  width: 100%; 
+  height: auto; 
+  position: relative; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  overflow: hidden;
+}
+
+.service-single-banner-background {
+  width: 100%; 
+  height: auto; 
+  aspect-ratio: 3.92; 
+  background-image: url("../images/servicesingle-banner.png");
+  background-repeat: no-repeat; 
+  background-size: contain; 
+  position: relative;
+}
+
+.service-single-banner-content {
+  position: absolute; 
+  top: 30%; 
+  left: 20%; 
+  transform: translate(0, -50%); 
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 30px 30px; 
+  border-radius: 29px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.service-single-banner-content .title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase; 
+  margin-bottom: 10px; 
+}
+
+.service-single-banner-heading {
+  font-family: "Cabin", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #181818;
+  margin: 10px 0;
+  word-wrap: break-word;
+  max-width: 650px;
+  line-height: 58px;
+}
+
+
+@media (max-width: 1024px) {
+  .service-single-banner-content {
+    top: 35%; 
+    left: 15%; 
+    max-width: 500px; 
+    padding: 15px 10px; 
+    font-size: 14px; 
+    line-height: 48px; 
+  }
+
+  .service-single-banner-heading {
+    font-size: 40px; 
+    line-height: 48px; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .service-single-banner-content {
+    top: 35%; 
+    left: 10%;
+    max-width: 90%;
+    padding: 5px 10px; 
+  }
+
+  .service-single-banner-heading {
+    font-size: 30px; 
+    line-height: 36px; 
+    max-width: 400px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .service-single-banner-content {
+    top: 45%; 
+    left: 5%; 
+    max-width: 100%; 
+    padding: 8px 8px; 
+  }
+
+  .service-single-banner-heading {
+    font-size: 24px; 
+    line-height: 30px; 
+  }
+}
+
+
+
 .financial-projections-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 150px;
   background-color: #f5f5f5;
+  
 }
 
 .financial-projections-header {

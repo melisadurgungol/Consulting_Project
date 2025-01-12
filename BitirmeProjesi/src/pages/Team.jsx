@@ -1,8 +1,9 @@
 import React from "react";
 import TopPanel from "../components/TopPanel";
+import "../assets/styles/TeamPage.css";
 import HeaderPanel from "../components/HeaderPanel";
-import Banner from "../components/Banner";
-import teamBanner from "../assets/images/team-banner.png"
+import Title from "../components/Title";
+
 
 
 function Team() {
@@ -10,16 +11,18 @@ function Team() {
     <div>
     <TopPanel/>
     <HeaderPanel/>
-    <Banner
-          title="TEAM"
-          subtitle="The Consultors"
-          image={teamBanner}
-          height="487px"
-          contentwidth="443px"
-          contentleft="322px"
-          contentheight="199px"
-          bannertitlewidth="82px"
-        />
+
+    <div className="team-banner-section">
+  <div className="team-banner-background">
+    <div className="team-banner-content">
+      <Title title="TEAM" backgroundColor="#FFCC4A" color="#181818" />
+      <h2 className="team-banner-heading">
+       The Consultors
+      </h2>
+    </div>
+  </div>
+</div>
+  
     </div>
   );
 }

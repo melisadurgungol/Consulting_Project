@@ -17,7 +17,7 @@ import PasswordProtection from "./pages/PasswordProtection";
 import NotFound404 from "./pages/NotFound404";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import PageHeader from "./components/PageHeader";
+
 
 function App() {
   return (
@@ -37,7 +37,7 @@ function App() {
         <Route path="/contact" exact element={<Contact />} />
         <Route path="/changelog" exact element={<Changelog />} />
         <Route path="/licenses" exact element={<Licenses />} />
-        <Route path="/password-protection" exact element={<PasswordProtection />} />
+        <Route path="/protection" exact element={<PasswordProtection />} />
         <Route path="*" element={<NotFound404 />} />
       </Routes>
       <Footer />

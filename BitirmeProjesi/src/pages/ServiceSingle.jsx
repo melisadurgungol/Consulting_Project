@@ -1,8 +1,7 @@
 import React from "react";
 import TopPanel from "../components/TopPanel";
 import HeaderPanel from "../components/HeaderPanel";
-import Banner from "../components/Banner";
-import serviceSingleBanner from "../assets/images/servicesingle-banner.png";
+import Title from "../components/Title";
 import InfoCard from "../components/InfoCard";
 import "../assets/styles/ServiceSingle.css";
 import ServicesIcon1 from "../assets/images/services-icon1.png"; // Resim dosyası (string) olarak import
@@ -57,13 +56,18 @@ function ServiceSingle() {
     <div>
       <TopPanel/>
       <HeaderPanel/>
-      <Banner
-        title="SERVICESINGLE"
-        subtitle="Services Details"
-        image={serviceSingleBanner}
-        height="620px"
-        bannertitlewidth="180px"
-      />
+
+      <div className="service-single-banner-section">
+  <div className="service-single-banner-background">
+    <div className="service-single-banner-content">
+      <Title title="SERVICE SINGLE" backgroundColor="#FFCC4A" color="#181818" />
+      <h2 className="service-single-banner-heading">
+        Services Details
+      </h2>
+    </div>
+  </div>
+</div>
+
       <div className="financial-projections-container">
       <div className="financial-projections-container2" >
         {}

@@ -1,0 +1,84 @@
+.case-study-single-banner-section {
+    width: 100%; 
+    height: auto; 
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+  }
+  
+  .case-study-single-banner-background {
+    width: 100%; 
+    height: auto; 
+    aspect-ratio: 3.93;
+    background-image: url("../images/casestudysingle-banner.png"); 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    position: relative;
+  }
+  
+  .case-study-single-banner-content {
+    position: absolute; 
+    top: 25%; 
+    left: 20%; 
+    transform: translate(0, -50%); 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 40px 50px; 
+    border-radius: 29px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+
+  .case-study-single-banner-content .title {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase; 
+    margin-bottom: 10px; 
+  }
+  
+  .case-study-single-banner-heading {
+    font-family: "Cabin", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #181818;
+    margin: 10px 0;
+    word-wrap: break-word;
+    max-width: 650px;
+    line-height: 58px;
+  }
+
+  
+  @media (max-width: 1024px) {
+    .case-study-single-banner-content {
+      top: 25%; 
+      left: 15%; 
+      max-width: 500px;
+      padding: 15px 10px; 
+      font-size: 14px; 
+      line-height: 48px; 
+    }
+  
+    .case-study-single-banner-heading {
+      font-size: 40px; 
+      line-height: 48px; 
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .case-study-single-banner-content {
+      top: 25%; 
+      left: 10%; 
+      max-width: 90%; 
+      padding: 5px 10px; 
+    }
+  
+    .case-study-single-banner-heading {
+      font-size: 30px; 
+      line-height: 36px; 
+      max-width: 400px;
+      margin-top: -5px;
+    }
+  }
+ 
