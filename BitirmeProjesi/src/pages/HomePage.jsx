@@ -9,12 +9,8 @@ import Client3 from "../assets/images/client3.png";
 import Client4 from "../assets/images/client4.png";
 import Client5 from "../assets/images/client5.png";
 import Client6 from "../assets/images/client6.png";
-import About from "../components/About";
 import AboutSmile from "../assets/images/about-smile.png"
 import AboutStar from "../assets/images/about-star.png"
-import AboutUsPeople from "../assets/images/aboutus-people-image.png"
-import AboutUsDot from "../assets/images/aboutus-dot-image.png"
-import MarketExperience from "../assets/images/market-experience.png"
 import Services from "../components/Services";
 import ServicesIcon1 from "../assets/images/services-icon1.png";
 import ServicesIcon2 from "../assets/images/services-icon2.png";
@@ -48,10 +44,6 @@ import NextIcon from "../assets/images/next-icon.png";
 import KathleenSmith from "../assets/images/kathleen-smith.png";
 import PhoneNumberButton from "../components/PhoneNumberButton";
 import PhoneIcon from "../assets/images/telephone-icon.png";
-import GreenBox from "../assets/images/green-box.png";
-import YellowShadowBox from "../assets/images/yellow-shadow-box.png";
-import GetControlBox from "../assets/images/get-control-box.png";
-import GrowthAdvisorsBox from "../assets/images/growth-advisors-box.png";
 import MoreButton from "../components/MoreButton";
 import BlogLeftImage from "../assets/images/home-blog-content-left-img.png";
 import BlogRightImage from "../assets/images/home-blog-content-right-img.png";
@@ -61,6 +53,8 @@ import ContactPhoneIcon from "../assets/images/contact-phone-icon.png";
 import ContactWatchIcon from "../assets/images/contact-watch-icon.png";
 import ContactLocationIcon from "../assets/images/contact-location-icon.png";
 import BookAMeeting from "../components/BookAMeeting";
+import ConsultBanner from "../assets/images/consult-banner.png";
+import HomepageAboutImage from "../assets/images/homepage-about-image.png";
 
 function HomePage() {
 
@@ -68,18 +62,6 @@ function HomePage() {
     alert("Buton Tıklandı!");
 };
  
-  const stats = [
-    {
-      icon: AboutStar,
-      value: "400+",
-      label: "Business Services"
-    },
-    {
-      icon: AboutSmile,
-      value: "100+",
-      label: "Happy Customer"
-    }
-  ];
 
   const serviceList = [
     {
@@ -240,7 +222,7 @@ function HomePage() {
         <HeaderPanel/>
 
         <div className="home-banner-section">
-  {/* Arka Plan Görseli */}
+  
   <div className="home-banner-background">
     <div className="home-banner-content">
       <h2 className="home-banner-heading">
@@ -268,30 +250,64 @@ function HomePage() {
   </div>
 </div>
 
-        <div className="client">
-          <div style={{width:"205.42px", height:"54px"}}><img src={Client1} alt="" style={{height:"40px", marginTop:"10px"}} /></div>
-          <div style={{width:"94px", height:"89px"}}><img src={Client2} alt="" style={{height:"75px", marginTop:"10px"}}/></div>
-          <div style={{width:"185px", height:"53px"}}><img src={Client3} alt="" style={{height:"39px", marginTop:"10px"}}/></div>
-          <div style={{width:"174px", height:"53px"}}><img src={Client4} alt="" style={{height:"39px", marginTop:"10px"}}/></div>
-          <div style={{width:"240px", height:"53px"}}><img src={Client5} alt="" style={{height:"39px", marginTop:"10px"}}/></div>
-          <div style={{width:"246px", height:"53px"}}><img src={Client6} alt="" style={{height:"39px", marginTop:"10px"}}/></div>
+<div className="client">
+  <div>
+    <img src={Client1} alt="Client 1" />
+  </div>
+  <div>
+    <img src={Client2} alt="Client 2" />
+  </div>
+  <div>
+    <img src={Client3} alt="Client 3" />
+  </div>
+  <div>
+    <img src={Client4} alt="Client 4" />
+  </div>
+  <div>
+    <img src={Client5} alt="Client 5" />
+  </div>
+  <div>
+    <img src={Client6} alt="Client 6" />
+  </div>
+</div>
+
+
+        <div className="about-section">
+ 
+  <div className="about-left">
+    <Title title="ABOUT US" backgroundColor="#FFCC4A" color="#181818" />
+    <h2>About our Consulting Agency Team</h2>
+    <p>We create experiences and build products that make business grow.</p>
+    <p>
+      Get help from Alex Moore, a professional business coach with advanced
+      experience on growth and business scaling.
+    </p>
+  
+    <div className="about-stats">
+      <div className="stat-item">
+        <div className="business-services"> 
+        <img src={AboutStar} alt="Business Services" />
+        <h4>400+</h4>
         </div>
+        <span>Business Services</span>
+      </div>
+      <div className="stat-item">
+        <div className="business-services">
+        <img src={AboutSmile} alt="Happy Customer" />
+        <h4>100+</h4>
+        </div>
+        <span>Happy Customer</span>
+      </div>
+    </div>
+  </div>
 
-        <About
-            sectionTitle="ABOUT US" 
-            heading={<>About our Consulting <br /> Agency Team</>}
-            description="We create experiences and build products that make business grow."
-            text="Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling."
-            image1={AboutUsPeople}
-            image2={AboutUsDot}
-            image3={MarketExperience}
-            stats={stats}
-            styles={styles}
-        />
+  
+  <div className="about-right">
+    <img src={HomepageAboutImage} alt="Team Collaboration" />
+  </div>
+</div>
 
-        <div className="abotLineTop" style={{width:"380px", height:"1px", backgroundColor:"#d8d8d8", position:"absolute", top:"0", marginTop:"1585px", marginLeft:"335px"}}></div>
-        <div className="aboutLine" style={{backgroundColor:"#d8d8d8", position:"absolute", top:"0",width:"1px", height:"91px", marginTop:"1605px", marginLeft:"525px"}}></div>
-        <div className="aboutLineBottom" style={{width:"380px", height:"1px", backgroundColor:"#d8d8d8", position:"absolute", top:"0", marginTop:"1713px", marginLeft:"335px"}}></div>
+       
 
         <Services
           headerText="Get Control Over Your Business I take your finance to next level"
@@ -484,11 +500,7 @@ function HomePage() {
   </div>
 
   <div className="consult-banner-right">
-    <img src={AboutUsDot} alt="Banner 1" className="consult-image" />
-    <img src={YellowShadowBox} alt="Banner 2" className="consult-image overlay-image" />
-    <img src={GreenBox} alt="Banner 3" className="consult-image overlay-image" />
-    <img src={GrowthAdvisorsBox} alt="Banner 4" className="consult-image overlay-image" />
-    <img src={GetControlBox} alt="Banner 5" className="consult-image overlay-image" />
+    <img src={ConsultBanner} alt="" className="consult-image" />
   </div>
 </div>
 

@@ -1,0 +1,114 @@
+.principle-info-card {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start;
+    width: 100%; 
+    max-width: 250px;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    overflow: visible;
+    height: auto;
+  }
+  
+  .principle-info-card.expanded {
+    max-width: 350px; 
+    padding: 30px; 
+  }
+  
+  .principle-info-card-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #181818;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+  
+  .principle-info-card-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.2px;
+    color: #181818;
+    margin-bottom: 10px;
+    text-align: center; 
+  }
+  
+  .principle-info-card-description {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #595566;
+    line-height: 23.6px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .principle-info-card-button {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28.6px;
+    color: #181818;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    align-self:first baseline; 
+
+  }
+  
+  .principle-info-card-button:hover {
+    color: #595566; 
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .principle-info-card {
+      max-width: 250px; 
+      padding: 15px;
+    }
+  
+    .principle-info-card.expanded {
+      max-width: 300px; 
+    }
+  
+    .principle-info-card-title {
+      font-size: 18px; 
+    }
+  
+    .principle-info-card-description {
+      font-size: 14px; 
+    }
+  
+    .principle-info-card-button {
+      font-size: 14px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .principle-info-card {
+      max-width: 100%; 
+      margin: 0 10px; 
+    }
+  
+    .principle-info-card-title {
+      font-size: 16px;
+    }
+  
+    .principle-info-card-description {
+      font-size: 13px;
+    }
+  
+    .principle-info-card-button {
+      font-size: 13px;
+    }
+  }
+  
