@@ -99,19 +99,19 @@
 }
 
 
-/* Genel Ayarlar */
+
 .about-section {
-  display: flex; /* Sol ve sağ kısmı yan yana yerleştirir */
+  display: flex; 
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto; /* Ortala */
+  margin: 0 auto;
   padding: 130px 20px;
 }
 
-/* Sol Kısım */
+
 .about-left {
-  flex: 1; /* Sol kısım genişliği */
+  flex: 1; 
 }
 
 .about-left h2 {
@@ -149,13 +149,13 @@
 
 .about-stats {
   display: flex;
-  gap: 50px; /* İstatistik kartları arasındaki boşluk */
+  gap: 50px; 
   margin-top: 30px;
 }
 
 .stat-item {
   display: flex;
-  flex-direction: column; /* İstatistik içeriği alt alta */
+  flex-direction: column; 
   align-items: center;
   background-color: #f6f6f6;
   padding: 20px;
@@ -167,7 +167,7 @@
 .stat-item img {
   width: 30px;
   height: 30px;
-  margin-bottom: 10px; /* İkon ile metin arasındaki boşluk */
+  margin-bottom: 10px; 
   
 }
 
@@ -189,24 +189,24 @@
   color: #181818;
 }
 
-/* Sağ Kısım */
+
 .about-right {
-  flex: 1; /* Sağ kısım genişliği */
+  flex: 1; 
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
 .about-right img {
-  width: 100%; /* Görsel genişliğini kapsasın */
-  max-width: 700px; /* Maksimum genişlik */
+  width: 100%; 
+  max-width: 700px;
   border-radius: 15px;
 }
 
-/* Responsive Tasarım */
+
 @media (max-width: 768px) {
   .about-section {
-    flex-direction: column; /* Sol ve sağ kısmı alt alta yerleştir */
+    flex-direction: column; 
     text-align: center;
   }
 
@@ -221,12 +221,12 @@
   }
 
   .stat-item {
-    width: 140px; /* Daha küçük istatistik kartları */
+    width: 140px;
     padding: 15px;
   }
 
   .about-right img {
-    max-width: 300px; /* Görsel daha küçük */
+    max-width: 300px; 
     margin-top: 50px;
   }
 }
@@ -249,22 +249,22 @@
 
 .client {
   display: flex;
-  justify-content: space-between; /* Logolar arasında eşit boşluk bırakır */
-  align-items: center; /* Dikey hizalama */
-  gap: 20px; /* Elemanlar arasında boşluk */
-  margin: 20px auto; /* Üstten ve alttan boşluk */
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 20px; 
+  margin: 20px auto;
 }
 
 .client div {
-  flex: 1; /* Her bir logo eşit genişlik kaplar */
+  flex: 1; 
   display: flex;
-  justify-content: center; /* Logoların div içinde ortalanmasını sağlar */
+  justify-content: center; 
 }
 
 .client img {
-  max-width: 100%; /* Görsellerin taşmasını engeller */
-  height: auto; /* Görsellerin oranını korur */
-  object-fit: contain; /* Görselleri içeride tutar */
+  max-width: 100%; 
+  height: auto;
+  object-fit: contain; 
 }
 
 
@@ -915,31 +915,31 @@
  
 
 .consult-image {
-  width: 100%; /* Varsayılan olarak bulunduğu alanı doldur */
-  max-width: 520px; /* Maksimum genişlik (istenilen boyuta göre ayarlanabilir) */
+  width: 100%; 
+  max-width: 520px; 
   max-height: 525px;
-  height: auto; /* Oranı koruyarak yükseklik ayarla */
-  object-fit: contain; /* Görseli taşırmadan göster */
-  transition: width 0.3s ease; /* Görsel küçülürken geçiş efekti */
+  height: auto; 
+  object-fit: contain; 
+  transition: width 0.3s ease; 
 }
 
 
 @media (max-width: 1200px) {
   .consult-banner {
-    flex-direction: column; /* Banner içeriğini alt alta diz */
+    flex-direction: column;
     align-items: center;
 
   }
 
   .consult-banner-right {
-    margin-top: 20px; /* Sağ bölüm için üst boşluk ekle */
-    flex: none; /* Varsayılan genişlik ayarını kaldır */
-    width: 100%; /* Genişlik tüm banner alanını kaplasın */
+    margin-top: 20px; 
+    flex: none;
+    width: 100%; 
     justify-content: center;
   }
 
   .consult-image {
-    max-width: 300px; /* Görseli küçült */
+    max-width: 300px; 
   }
 }
 
@@ -1076,7 +1076,7 @@
   background-color: #d8d8d8; 
   margin: 10px 0; 
 }
-/* Responsive Tasarım */
+
 @media (max-width: 768px) {
   .blog-content {
     flex-direction: column;
@@ -1118,7 +1118,7 @@
   align-items: center;
   justify-content: center;
   gap: 50px; 
-  padding: 50px 20px;
+  padding: 90px 20px;
   flex-wrap: wrap; 
   width: 60%;
   margin: 0 auto;
@@ -1190,7 +1190,7 @@
   color: #181818;
 }
 
-/* Sağ Kısım (Form) */
+
 .contact-right {
   flex: 0.6;
 }

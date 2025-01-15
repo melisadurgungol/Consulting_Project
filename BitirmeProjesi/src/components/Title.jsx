@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "../assets/styles/Title.css";
 
-const Title = ({ title, backgroundColor, color }) => {
+const Title = ({ title, backgroundColor, color  }) => {
   return (
     <div
       className="custom-box"
@@ -14,9 +14,9 @@ const Title = ({ title, backgroundColor, color }) => {
 };
 
 Title.propTypes = {
-  title: PropTypes.string.isRequired, // Başlık zorunlu
-  backgroundColor: PropTypes.string, // Arka plan rengi
-  color: PropTypes.string, // Yazı rengi
+  title: PropTypes.string.isRequired, 
+  backgroundColor: PropTypes.string, 
+  color: PropTypes.string, 
 };
 
 export default Title;

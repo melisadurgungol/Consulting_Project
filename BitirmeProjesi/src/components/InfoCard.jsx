@@ -10,7 +10,8 @@ const InfoCard = ({
   textColor,
   width,
   height,
-  descriptionColor
+  descriptionColor,
+  titleColor, // Yeni eklenen prop
 }) => {
   return (
     <div
@@ -20,7 +21,6 @@ const InfoCard = ({
         color: textColor,
         width,
         height,
-        descriptionColor: descriptionColor
       }}
     >
       <div className="info-card-icon">
@@ -31,29 +31,38 @@ const InfoCard = ({
         )}
       </div>
       <div className="info-card-content">
-        <h3 className="info-card-title">{title}</h3>
-        <p className="info-card-description" style={{color:descriptionColor}}>{description}</p>
+        <h3 className="info-card-title" style={{ color: titleColor }}>
+          {title}
+        </h3>
+        <p
+          className="info-card-description"
+          style={{ color: descriptionColor }}
+        >
+          {description}
+        </p>
       </div>
     </div>
   );
 };
 
 InfoCard.propTypes = {
-  title: PropTypes.string.isRequired, 
-  description: PropTypes.string.isRequired, 
-  icon: PropTypes.oneOfType([PropTypes.elementType, PropTypes.string]), 
-  backgroundColor: PropTypes.string, 
-  textColor: PropTypes.string, 
-  width: PropTypes.string, 
-  height: PropTypes.string, 
-  descriptionColor: PropTypes.string
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  icon: PropTypes.oneOfType([PropTypes.elementType, PropTypes.string]),
+  backgroundColor: PropTypes.string,
+  textColor: PropTypes.string,
+  width: PropTypes.string,
+  height: PropTypes.string,
+  descriptionColor: PropTypes.string,
+  titleColor: PropTypes.string, 
 };
 
 InfoCard.defaultProps = {
-  backgroundColor: "#f9f9f9", 
-  textColor: "#333", 
-  width: "300px", 
+  backgroundColor: "#f9f9f9",
+  textColor: "#333",
+  width: "300px",
   height: "auto",
+  titleColor: "#181818", 
 };
 
 export default InfoCard;

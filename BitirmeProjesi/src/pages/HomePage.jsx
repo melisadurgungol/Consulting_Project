@@ -377,7 +377,7 @@ function HomePage() {
               key={index}
               title={card.title}
               description={card.description}
-              icon={card.icon} // Burada icon JSX olarak tanımlandı
+              icon={card.icon} 
               backgroundColor={card.backgroundColor}
               textColor={card.textColor}
               width={card.width}
@@ -596,29 +596,29 @@ function HomePage() {
           </div>
           </div>
         </div>
-        <div class="contact-right">
-  <form class="contact-form">
-    <div class="form-row">
-      <div class="form-group">
+        <div className="contact-right">
+  <form className="contact-form">
+    <div className="form-row">
+      <div className="form-group">
         <label>Full Name</label>
         <input type="text" placeholder="john david" />
       </div>
-      <div class="form-group">
+      <div className="form-group">
         <label>Email</label>
         <input type="email" placeholder="consult@mail.com" />
       </div>
     </div>
-    <div class="form-row">
-      <div class="form-group">
+    <div className="form-row">
+      <div className="form-group">
         <label>Phone</label>
         <input type="text" placeholder="+008 654 231" />
       </div>
-      <div class="form-group">
+      <div className="form-group">
         <label>Company (optional)</label>
         <input type="text" placeholder="yourcompany.com" />
       </div>
     </div>
-    <div class="form-row">
+    <div className="form-row">
       <label>Message</label>
       <textarea placeholder="Briefly tell us about your project and your current goals. How can we help you?"></textarea>
     </div>

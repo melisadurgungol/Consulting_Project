@@ -325,3 +325,248 @@
     align-items: center;
   }
 }
+
+.our-history-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px;
+  gap: 20px;
+
+}
+
+.history-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.history-header h2 {
+  font-family: "Cabin", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52.3px;
+  color: #181818;
+  margin: 20px 0;
+  max-width: 500px;
+  
+ 
+}
+
+.history-header p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.6px;
+  color: #595566;
+  margin: 0;
+  max-width: 720px;
+}
+
+.history-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 1060px;
+}
+
+.history-video-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.history-video {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+}
+
+
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .history-header h2 {
+    font-size: 28px;
+  }
+
+  .history-header p {
+    font-size: 14px;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .history-header h2 {
+    font-size: 24px;
+  }
+
+  .history-header p {
+    font-size: 12px;
+  }
+
+  
+}
+
+.team-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 130px 20px;
+  background-color: #f9f9f9;
+}
+
+.team-header {
+  text-align: left;
+  width: 100%;
+  max-width: 970px;
+  margin-bottom: 40px;
+}
+
+.team-header h2 {
+  font-family: "Cabin", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52.3px;
+  max-width: 600px;
+  color: #181818;
+  margin: 0px 0;
+}
+
+.team-header p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.6px;
+  color: #595566;
+  max-width: 640px;
+  margin-top: 10px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.person-card {
+  flex: 1 1 calc(33.33% - 20px); /* Eşit sütunlar */
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .person-card {
+    flex: 1 1 calc(50% - 20px); /* Orta ekranlar için 2 sütun */
+  }
+}
+
+@media (max-width: 480px) {
+  .person-card {
+    flex: 1 1 100%; /* Küçük ekranlar için 1 sütun */
+  }
+}
+
+.consult-banner {
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  width: 60%;  
+  margin: 0 auto;  
+  background-color: #000;  
+  color: #fff;   
+  border-radius: 20px;  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+  gap: 20px;  
+  margin-top: 200px;
+  margin-bottom: 220px;
+}
+
+.consult-banner-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 50%;
+  display: inline-block;
+  padding-left: 49px;
+  flex: 1;  
+  text-align: left;  
+  
+}
+
+.consult-banner-right{
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  
+}
+
+
+.consult-banner-left h2 {
+  font-family: "Cabin", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52.2px;
+  color: #ffffff;
+  word-break:break-word ;
+  max-width: 450px;
+  
+}
+
+.consult-banner-left p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23.6px;
+  color: #ffffff;
+  word-break:break-word ;
+  max-width: 410px;
+  margin-top: 20px;
+}
+
+.consult-phone {
+  margin-top: 30px;
+}
+
+ 
+
+.consult-image {
+  width: 100%; /* Varsayılan olarak bulunduğu alanı doldur */
+  max-width: 520px; /* Maksimum genişlik (istenilen boyuta göre ayarlanabilir) */
+  max-height: 525px;
+  height: auto; /* Oranı koruyarak yükseklik ayarla */
+  object-fit: contain; /* Görseli taşırmadan göster */
+  transition: width 0.3s ease; /* Görsel küçülürken geçiş efekti */
+}
+
+
+@media (max-width: 1200px) {
+  .consult-banner {
+    flex-direction: column; /* Banner içeriğini alt alta diz */
+    align-items: center;
+
+  }
+
+  .consult-banner-right {
+    margin-top: 20px; /* Sağ bölüm için üst boşluk ekle */
+    flex: none; /* Varsayılan genişlik ayarını kaldır */
+    width: 100%; /* Genişlik tüm banner alanını kaplasın */
+    justify-content: center;
+  }
+
+  .consult-image {
+    max-width: 300px; /* Görseli küçült */
+  }
+}
+
+

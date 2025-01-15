@@ -30,7 +30,8 @@ function ServiceSingle() {
       backgroundColor: "#181818",
       textColor: "#ffffff",
       width: "320px",
-      descriptionColor:"#ffffff"
+      descriptionColor:"#ffffff",
+      titleColor:"#ffffff"
     },
     {
       title: "Financial Plan",
@@ -95,11 +96,12 @@ function ServiceSingle() {
               key={index}
               title={card.title}
               description={card.description}
-              icon={card.icon} // Burada icon JSX olarak tanımlandı
+              icon={card.icon} 
               backgroundColor={card.backgroundColor}
               textColor={card.textColor}
               width={card.width}
               descriptionColor={card.descriptionColor}
+              titleColor={card.titleColor}
             />
           ))}
         </div>

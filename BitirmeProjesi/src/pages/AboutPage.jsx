@@ -15,6 +15,14 @@ import AboutBestFeatures from "../assets/images/about-best-features.png";
 import AboutCreativeIdeas from "../assets/images/about-creative-ideas.png";
 import AboutEasySolutions from "../assets/images/about-easy-solutions.png";
 import AboutExperience from "../assets/images/about-experience.png";
+import AboutOurHistory from "../assets/images/about-ourhistory.png";
+import PersonCard from "../components/PersonCard";
+import SarahJasmine from "../assets/images/sarah-jasmine.png";
+import JohnCarter from "../assets/images/about-john-carter.png";
+import DaisyStella from "../assets/images/daisy-stella.png";
+import PhoneNumberButton from "../components/PhoneNumberButton";
+import PhoneIcon from "../assets/images/telephone-icon.png";
+import ConsultBanner from "../assets/images/consult-banner.png";
 
 
 function AboutPage() {
@@ -23,7 +31,7 @@ function AboutPage() {
     alert("Buton Tıklandı!");
 };
 
-// Dinamik verileri bir dizi olarak tanımlayın
+
 const principlesData = [
   {
     icon: <img src={AboutCreativeIdeas} alt="Icon" style={{ width: "24px", height: "24px" }} />,
@@ -69,6 +77,42 @@ const principlesData = [
     
   }
 
+  const teamData = [
+    {
+      image: SarahJasmine,
+      name: "Sarah Jasmine",
+      title: "CEO at Company",
+      description: "Leverage agile frameworks to provide a robust synopsis for high-level overviews.",
+      socialLinks: {
+        instagram: "https://instagram.com",
+        facebook: "https://facebook.com",
+        twitter: "https://twitter.com",
+      },
+    },
+    {
+      image: JohnCarter,
+      name: "John Carter",
+      title: "Manager",
+      description: "Leverage agile frameworks to provide a robust synopsis for high-level overviews.",
+      socialLinks: {
+        instagram: "https://instagram.com",
+        facebook: "https://facebook.com",
+        twitter: "https://twitter.com",
+      },
+    },
+    {
+      image: DaisyStella,
+      name: "Daisy Stella",
+      title: "CEO at Company",
+      description: "Leverage agile frameworks to provide a robust synopsis for high-level overviews.",
+      socialLinks: {
+        instagram: "https://instagram.com",
+        facebook: "https://facebook.com",
+        twitter: "https://twitter.com",
+      },
+    },
+  ];
+
   return (
     <div>
     <TopPanel/>
@@ -89,7 +133,6 @@ const principlesData = [
 
 
 <div className="our-vision">
-  {/* Sol Taraf: Metin Bölümü */}
   <div className="our-vision-left">
     <Title title="OUR VISION" backgroundColor="#4eaf4e" color="#fff" />
     <h2>Turn your ideas into reality.</h2>
@@ -115,7 +158,6 @@ const principlesData = [
     </div>
   </div>
 
-  {/* Sağ Taraf: Görsel Bölümü */}
   <div className="our-vision-right">
     <img src={AboutpageOurvision} alt="Our Vision Illustration" />
   </div>
@@ -181,6 +223,85 @@ const principlesData = [
   </div>
 </div>
       </div>
+
+      <div className="our-history-section">
+  {/* Başlık ve Açıklama */}
+  <div className="history-header">
+    <Title
+      title="OUR HISTORY"
+      backgroundColor="#4eaf4e"
+      color="#fff"
+    />
+    <h2>Better Website Means A User Experience</h2>
+    <p>
+      Ippsum is the result of synergy between our teams and our customers. 
+      Our company culture is focused on excellent productivity, customer satisfaction, 
+      respect for team and individual achievements.
+    </p>
+  </div>
+
+  {/* Video Görseli */}
+  <div className="history-video-container">
+    <div className="history-video-wrapper">
+      <img src={AboutOurHistory} alt="Our History Video" className="history-video" />
+    </div>
+  </div>
+</div>
+
+
+<div className="team-page">
+      {/* Başlık Bölümü */}
+      <div className="team-header">
+        <Title title="OUR TEAM" backgroundColor="#ffcc4a" color="#181818" />
+        <h2>We champion the bold to achieve the extraordinary</h2>
+        <p>
+          Ippsum is the result of synergy between our teams and our customers.
+          Our company culture is focused on excellent productivity, customer
+          satisfaction, respect for team.
+        </p>
+      </div>
+
+      {/* Takım Üyeleri */}
+      <div className="team-container">
+        {teamData.map((member, index) => (
+          <PersonCard
+            key={index}
+            image={member.image}
+            name={member.name}
+            title={member.title}
+            description={member.description}
+            socialLinks={member.socialLinks}
+          />
+        ))}
+      </div>
+</div>
+
+          
+  <div className="consult-banner">
+  <div className="consult-banner-left">
+    <Title title="BOOK NOW" backgroundColor="#4CAF50" color="#ffffff" />
+    <h2>Better Consult, <strong style={{color:"#727272"}}>Better</strong> Results</h2>
+    <p>
+      Our software development agency has a growth up to 30% per each year. If
+      you are result-oriented, not afraid to take initiative – drop us a note
+      and join our team!
+    </p>
+    <div className="consult-phone">
+      <PhoneNumberButton
+        icon={<img src={PhoneIcon} alt="Phone" />}
+        number="+800 1234 654"
+        onClick={handleClick}
+      />
+    </div>
+  </div>
+
+  <div className="consult-banner-right">
+    <img src={ConsultBanner} alt="" className="consult-image" />
+  </div>
+</div>
+
+
+
 
 
   
