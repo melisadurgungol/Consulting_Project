@@ -225,7 +225,7 @@ const principlesData = [
       </div>
 
       <div className="our-history-section">
-  {/* Başlık ve Açıklama */}
+ 
   <div className="history-header">
     <Title
       title="OUR HISTORY"
@@ -240,7 +240,7 @@ const principlesData = [
     </p>
   </div>
 
-  {/* Video Görseli */}
+ 
   <div className="history-video-container">
     <div className="history-video-wrapper">
       <img src={AboutOurHistory} alt="Our History Video" className="history-video" />
@@ -250,7 +250,7 @@ const principlesData = [
 
 
 <div className="team-page">
-      {/* Başlık Bölümü */}
+
       <div className="team-header">
         <Title title="OUR TEAM" backgroundColor="#ffcc4a" color="#181818" />
         <h2>We champion the bold to achieve the extraordinary</h2>
@@ -261,7 +261,7 @@ const principlesData = [
         </p>
       </div>
 
-      {/* Takım Üyeleri */}
+      
       <div className="team-container">
         {teamData.map((member, index) => (
           <PersonCard

@@ -173,6 +173,9 @@
       flex-direction: column;
       align-items: center; 
     }
+    .grey-line{
+      display: none;
+    }
   
     .footer-links {
       justify-content: center;

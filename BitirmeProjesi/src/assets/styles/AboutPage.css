@@ -390,7 +390,7 @@
 
 
 
-/* Responsive Tasarım */
+
 @media (max-width: 768px) {
   .history-header h2 {
     font-size: 28px;
@@ -485,7 +485,6 @@
   border-radius: 20px;  
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
   gap: 20px;  
-  margin-top: 200px;
   margin-bottom: 220px;
 }
 

@@ -106,7 +106,7 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 130px 20px;
+  padding: 100px 20px;
 }
 
 
@@ -253,6 +253,7 @@
   align-items: center; 
   gap: 20px; 
   margin: 20px auto;
+  margin-bottom: 50px;
 }
 
 .client div {
@@ -733,6 +734,7 @@
   align-items: center;
   gap: 20px;
   padding: 40px 20px;
+  
 }
 
 .feedback-title {
@@ -1276,3 +1278,5 @@
     width: 100%;
   }
 }
+
+
