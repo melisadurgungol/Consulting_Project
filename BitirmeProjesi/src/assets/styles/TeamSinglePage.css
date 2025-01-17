@@ -1,0 +1,377 @@
+
+.team-single-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 70px;
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+
+  .team-single-left {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .team-single-pattern {
+    position: absolute;
+    background-image: url("../images/pattern-image.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 290px; 
+    height: 250px;
+    top: -50px; 
+    left: -80px; 
+    z-index: 1; 
+  }
+  
+  .team-single-image {
+    position: relative;
+    z-index: 2; 
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+  .team-single-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .team-single-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 550px;
+  }
+  
+  .team-single-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .team-single-name {
+    font-family: "Cabin", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 40.6px;
+    margin: 0;
+    color: #181818;
+  }
+  
+  .team-single-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #595566;
+    line-height: 23.2px;
+    margin-top: 5px;
+  }
+  
+
+  .team-single-social {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .team-social-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .team-social-icon:hover {
+    transform: scale(1.1);
+  }
+  
+
+  .team-single-description p {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #595959;
+    margin: 0;
+    max-width: 620px;
+  }
+  
+
+  .team-single-experience {
+    border-top: 1px solid #dadada;
+    padding-top: 20px;
+  }
+  
+  .experience-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 40.6px;
+    color: #181818;
+  }
+  
+  .team-single-experience p {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.6px;
+    color: #595566;
+    margin: 0;
+    max-width: 630px;
+  }
+  
+  .team-single-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 70px;
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .team-single-section {
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 50px;
+    }
+
+    .team-single-left {
+        order: 1;
+        justify-content: center;
+    }
+
+    .team-single-right {
+        order: 2;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .team-single-pattern {
+        width: 200px;
+        height: 150px;
+        top: -30px;
+        left: -30px;
+    }
+
+    .team-single-image {
+        max-width: 300px;
+    }
+
+    .team-single-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .team-single-name {
+        font-size: 28px;
+    }
+
+    .team-single-title {
+        font-size: 18px;
+    }
+
+    .team-single-social {
+        gap: 15px;
+    }
+
+    .team-single-description p,
+    .team-single-experience p {
+        max-width: 100%;
+    }
+}
+
+.newsletter {
+  display: flex;
+  align-items: center; 
+  background-color: #181818;
+  max-width: 1200px;
+  border-radius: 20px;
+  position: relative;
+  margin: 0 auto;
+  height: 250px;
+  margin-bottom: 100px;
+}
+
+.newsletter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%; 
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.newsletter-left {
+  flex: 1;
+  color: #fff;
+}
+
+.newsletter-left h2 {
+  font-family: "Cabin", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0 0 10px 0;
+}
+
+.newsletter-left p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.6px;
+  margin: 0;
+}
+
+.newsletter-left span {
+  font-weight: 700;
+}
+
+.newsletter-right {
+  flex: 1.2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.newsletter-right input {
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.newsletter-right input::placeholder {
+  color: #a9a9a9;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.6px;
+}
+
+.newsletter-right button {
+  padding: 15px 25px;
+  border-radius: 50px;
+  background-color: #ffcc4a;
+  border: none;
+  color: #181818;
+  font-family: "lato", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-right button:hover {
+  background-color: #e6b842;
+}
+
+.newsletter::before {
+  content: "";
+  position: absolute;
+  right: 1px;
+  width: 250px;
+  height: 250px;
+  background-image: url("../images/pattern-image-two.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+.newsletter::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+ 
+}
+
+
+@media (max-width: 768px) {
+  .newsletter {
+    height: auto; 
+  }
+
+  .newsletter-section {
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    gap: 20px; 
+  }
+
+  .newsletter-left h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .newsletter-left p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .newsletter-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .newsletter-right input {
+    max-width: 250px;
+  }
+
+  .newsletter-right button {
+    max-width: 120px;
+    padding: 12px 20px;
+  }
+
+  .newsletter::before {
+    display: none; 
+  }
+
+  .newsletter::after {
+    display: none; 
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-left h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .newsletter-left p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .newsletter-right input {
+    max-width: 200px;
+    padding: 10px;
+  }
+
+  .newsletter-right button {
+    max-width: 100px;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
