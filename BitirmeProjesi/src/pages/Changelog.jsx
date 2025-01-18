@@ -22,6 +22,11 @@ function Changelog(){
           </div>
         </div>
 
+        <div className="changelog-section">
+          <h2 className="changelog-title">Version 01</h2>
+          <input type="text" placeholder="Initial Consultalk Webflow Template Release" className="changelog-mail"/>
+        </div>
+
 
         </div>
       );

@@ -22,6 +22,12 @@ function PasswordProtection(){
           </div>
         </div>
 
+        <div className="protection-section">
+          <h2 className="protection-title">Enter Password</h2>
+          <input type="text" placeholder="Enter Your Password" className="protection-mail"/>
+          <button className="protection-button">Submit</button>
+        </div>
+
         </div>
       );
 }

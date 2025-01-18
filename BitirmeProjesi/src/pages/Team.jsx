@@ -141,20 +141,20 @@ const greatTeamData = [
       </div>
 </div>
 
-<div className="contact-section">
-  <div className="contact-left">
+<div className="team-contact-section">
+  <div className="team-contact-left">
     <Title title="CONTACT" backgroundColor="#323232" color="#fff" />
     <h2>Ready To Talk?</h2>
     <p>
       Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Massa placerat duis ultricies lacus sed turpis. 
       Pellentesque pellentesque habitant morbi tristique.
     </p>
-    <div className="contact-form">
-      <input type="text" placeholder="your mail address" className="contact-input" />
-      <button className="contact-button">Send Message</button>
+    <div className="team-contact-form">
+      <input type="text" placeholder="your mail address" className="team-contact-input" />
+      <button className="team-contact-button">Send Message</button>
     </div>
   </div>
-  <div className="contact-right">
+  <div className="team-contact-right">
     <img src={TeamContactImage} alt="Contact Team" className="contact-image" />
   </div>
 </div>

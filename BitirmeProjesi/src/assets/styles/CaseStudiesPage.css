@@ -82,3 +82,140 @@
     }
   }
  
+ 
+.case-blog-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+
+.blog-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #181818;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.blog-tabs .tab {
+  font-family: "Cabin", sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #fff;
+  cursor: pointer;
+  padding: 25px 35px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.blog-tabs .tab:hover {
+  background-color: #333;
+  color: #ffcc4a;
+  text-decoration: underline;
+}
+
+
+.case-blog-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 20px 10px;
+  border-radius: 30px;
+}
+
+.case-blog-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.case-blog-card:hover {
+  transform: scale(1.05);
+}
+
+.case-blog-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.case-blog-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.case-blog-card:hover .blog-card-overlay {
+  opacity: 1;
+}
+
+.case-blog-card-overlay h3 {
+  color: #fff;
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.case-blog-card-overlay p {
+  color: #ffcc4a;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .case-blog-card {
+    flex: 1 1 calc(50% - 20px); /* Orta boyutlar için 2 sütun */
+    max-width: calc(50% - 20px);
+  }
+  .case-blog-tabs {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .case-blog-card {
+    flex: 1 1 100%; /* Mobilde her bir kart tam genişlikte */
+    max-width: 100%;
+  }
+
+  .case-blog-tabs {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .case-blog-tabs .tab {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+

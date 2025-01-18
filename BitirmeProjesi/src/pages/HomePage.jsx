@@ -505,13 +505,13 @@ function HomePage() {
 </div>
 
   <div>
-    <div className="blog-section">
-    <div className="blog-header">
-  <div className="header-left">
+    <div className="home-blog-section">
+    <div className="home-blog-header">
+  <div className="home-header-left">
     <Title title="BLOG" backgroundColor="#4CAF50" color="#ffffff" />
     <h2>Take a look at our latest articles & resources</h2>
   </div>
-  <div className="header-right">
+  <div className="home-header-right">
     <MoreButton
       text="More News"
       backgroundColor="#ffcc4a"
@@ -522,16 +522,16 @@ function HomePage() {
 </div>
 
 
-    <div className="blog-content">
-      <div className="blog-card">
-        <img src={BlogLeftImage} alt="" className="blog-card-image"/>
-        <h2 className="blog-card-title">Consulting Fees Study 2019 (And How To Raise Your Rates)</h2>
-        <p className="blog-card-description">Leverage agile frameworks to provide a robust synopsis for high level overviews. 
+    <div className="home-blog-content">
+      <div className="home-blog-card">
+        <img src={BlogLeftImage} alt="" className="home-blog-card-image"/>
+        <h2 className="home-blog-card-title">Consulting Fees Study 2019 (And How To Raise Your Rates)</h2>
+        <p className="home-blog-card-description">Leverage agile frameworks to provide a robust synopsis for high level overviews. 
           Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
           <div className="line"></div>
-        <div className="blog-card-author">
-        <img src={JohnCarter} alt="" className="author-image"/>
-        <p className="author-name">John Carter&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;September 1, 2022 </p>
+        <div className="home-blog-card-author">
+        <img src={JohnCarter} alt="" className="home-author-image"/>
+        <p className="home-author-name">John Carter&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;September 1, 2022 </p>
         <MoreButton
           text="Read More"
           backgroundColor="#181818"
@@ -542,15 +542,15 @@ function HomePage() {
         </div>
         <div className="line"></div>
       </div>
-      <div className="blog-card">
-        <img src={BlogRightImage} alt="" className="blog-card-image"/>
-        <h2 className="blog-card-title">What is growth hacking and how to apply it to your startup</h2>
-        <p className="blog-card-description">Leverage agile frameworks to provide a robust synopsis for high level overviews. 
+      <div className="home-blog-card">
+        <img src={BlogRightImage} alt="" className="home-blog-card-image"/>
+        <h2 className="home-blog-card-title">What is growth hacking and how to apply it to your startup</h2>
+        <p className="home-blog-card-description">Leverage agile frameworks to provide a robust synopsis for high level overviews. 
           Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
           <div className="line"></div>
-        <div className="blog-card-author">
-        <img src={NayraMelson} alt="" className="author-image"/>
-        <p className="author-name">Nayra Melson&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;September 1, 2022  </p>
+        <div className="home-blog-card-author">
+        <img src={NayraMelson} alt="" className="home-author-image"/>
+        <p className="home-author-name">Nayra Melson&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;September 1, 2022  </p>
         <MoreButton 
           text="Read More"
           backgroundColor="#fff"
