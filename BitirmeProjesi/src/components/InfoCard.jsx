@@ -11,7 +11,7 @@ const InfoCard = ({
   width,
   height,
   descriptionColor,
-  titleColor, // Yeni eklenen prop
+  titleColor, 
 }) => {
   return (
     <div

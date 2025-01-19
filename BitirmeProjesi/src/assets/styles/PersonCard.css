@@ -35,8 +35,8 @@
   }
   
   .person-card:hover .person-card-title-badge {
-    background-color: #ffcc4a; /* Hover arka plan */
-    color: #181818; /* Hover yazı rengi */
+    background-color: #ffcc4a; 
+    color: #181818; 
   }
   .person-card-content {
     margin-top: 10px;

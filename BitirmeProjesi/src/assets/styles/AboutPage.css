@@ -458,19 +458,19 @@
 }
 
 .person-card {
-  flex: 1 1 calc(33.33% - 20px); /* Eşit sütunlar */
+  flex: 1 1 calc(33.33% - 20px);
   max-width: 300px;
 }
 
 @media (max-width: 768px) {
   .person-card {
-    flex: 1 1 calc(50% - 20px); /* Orta ekranlar için 2 sütun */
+    flex: 1 1 calc(50% - 20px); 
   }
 }
 
 @media (max-width: 480px) {
   .person-card {
-    flex: 1 1 100%; /* Küçük ekranlar için 1 sütun */
+    flex: 1 1 100%; 
   }
 }
 
@@ -540,31 +540,31 @@
  
 
 .consult-image {
-  width: 100%; /* Varsayılan olarak bulunduğu alanı doldur */
-  max-width: 520px; /* Maksimum genişlik (istenilen boyuta göre ayarlanabilir) */
+  width: 100%; 
+  max-width: 520px; 
   max-height: 525px;
-  height: auto; /* Oranı koruyarak yükseklik ayarla */
-  object-fit: contain; /* Görseli taşırmadan göster */
-  transition: width 0.3s ease; /* Görsel küçülürken geçiş efekti */
+  height: auto; 
+  object-fit: contain; 
+  transition: width 0.3s ease; 
 }
 
 
 @media (max-width: 1200px) {
   .consult-banner {
-    flex-direction: column; /* Banner içeriğini alt alta diz */
+    flex-direction: column; 
     align-items: center;
 
   }
 
   .consult-banner-right {
-    margin-top: 20px; /* Sağ bölüm için üst boşluk ekle */
-    flex: none; /* Varsayılan genişlik ayarını kaldır */
-    width: 100%; /* Genişlik tüm banner alanını kaplasın */
+    margin-top: 20px; 
+    flex: none; 
+    width: 100%; 
     justify-content: center;
   }
 
   .consult-image {
-    max-width: 300px; /* Görseli küçült */
+    max-width: 300px; 
   }
 }
 

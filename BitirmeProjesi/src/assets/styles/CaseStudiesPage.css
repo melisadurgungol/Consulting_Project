@@ -193,7 +193,7 @@
 
 @media (max-width: 768px) {
   .case-blog-card {
-    flex: 1 1 calc(50% - 20px); /* Orta boyutlar için 2 sütun */
+    flex: 1 1 calc(50% - 20px); 
     max-width: calc(50% - 20px);
   }
   .case-blog-tabs {
@@ -204,7 +204,7 @@
 
 @media (max-width: 480px) {
   .case-blog-card {
-    flex: 1 1 100%; /* Mobilde her bir kart tam genişlikte */
+    flex: 1 1 100%; 
     max-width: 100%;
   }
 

@@ -15,13 +15,13 @@ function HeaderPanel() {
   return (
     <div className="header-panel">
       <div className="header-panel-container">
-        {/* Sol Kısım - Logo */}
+      
       <div className="header-panel-left">
         <img src={AskExperts} alt="Ask Experts Logo" className="experts-logo" />
         <h2 className="experts-title">AskExperts</h2>
       </div>
 
-      {/* Orta Kısım - Menü */}
+      
       <div className="header-panel-center">
         <ul className="header-menu">
           <li
@@ -67,7 +67,7 @@ function HeaderPanel() {
         </ul>
       </div>
 
-      {/* Sağ Kısım - Telefon */}
+      
       <div className="header-panel-right">
         <PhoneNumberButton
           icon={<img src={TelephoneButtonIcon} alt="Phone" />}

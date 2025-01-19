@@ -137,7 +137,7 @@
   
   @media (max-width: 768px) {
     .not-found-section {
-      flex-direction: column; /* İçeriği dikey hizalar */
+      flex-direction: column; 
       height: auto;
       padding: 20px;
     }

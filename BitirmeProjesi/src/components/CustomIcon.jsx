@@ -18,8 +18,8 @@ function CustomIcon({ iconSrc, iconSize = "24px" }) {
 }
 
 CustomIcon.propTypes = {
-    iconSrc: PropTypes.string.isRequired, // İkonun kaynağı zorunlu
-    iconSize: PropTypes.string, // İkon boyutu
+    iconSrc: PropTypes.string.isRequired, 
+    iconSize: PropTypes.string, 
 };
 
 export default CustomIcon;

@@ -11,19 +11,19 @@ function TopPanel() {
   return (
     <div className="top-panel">
   <div className="top-panel-container">
-    {/* Sol Kısım */}
+   
     <div className="top-panel-left">
       <img src={clockIcon} alt="Clock Icon" className="top-panel-icon" />
       <span>Monday - Friday 8AM - 9PM</span>
     </div>
 
-    {/* Orta Kısım */}
+    
     <div className="top-panel-center">
       <img src={locationIcon} alt="Location Icon" className="top-panel-icon" />
       <span>725 Park Ave, New York</span>
     </div>
 
-    {/* Sağ Kısım */}
+    
     <div className="top-panel-right">
         <a href="https://instagram.com" target="_blank">
             <img src={instagramIcon} alt="Instagram" className="social-icon" />
@@ -37,10 +37,6 @@ function TopPanel() {
             <a href="https://linkedin.com" target="_blank">
         <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
         </a>
-      
-      
-      
-      
     </div>
   </div>
 </div>

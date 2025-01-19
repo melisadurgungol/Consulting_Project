@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import "../assets/styles/HomePage.css";
 import TopPanel from "../components/TopPanel";
 import HeaderPanel from "../components/HeaderPanel";
@@ -62,6 +63,16 @@ function HomePage() {
     alert("Buton Tıklandı!");
 };
  
+const navigate = useNavigate();
+
+const handleMoreNewsClick = () => {
+  navigate('/blog'); 
+};
+const handleServicesClick = () => {
+  navigate("/services"); 
+};
+
+
 
   const serviceList = [
     {
@@ -235,7 +246,7 @@ function HomePage() {
           text="Our Services"
           backgroundColor="#181818"
           textColor="#fff"
-          onClick={handleClick}
+          onClick={handleServicesClick}
           
         />
         <BookAMeeting
@@ -516,7 +527,7 @@ function HomePage() {
       text="More News"
       backgroundColor="#ffcc4a"
       textColor="#181818"
-      onClick={handleClick}
+      onClick={handleMoreNewsClick}
     />
   </div>
 </div>

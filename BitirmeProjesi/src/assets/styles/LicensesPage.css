@@ -81,4 +81,265 @@
       margin-top: -5px;
     }
   }
+
+.licenses-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+
+
+.licenses-graphics-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.licenses-graphics-left {
+  flex: 0.35;
+}
+
+.licenses-graphics-left h2 {
+  font-size: 45px;
+  font-family: "cabin", sans-serif;
+  font-weight: 700;
+  line-height: 52px;
+  margin: 0;
+}
+
+.licenses-graphics-right {
+  flex: 0.7;
+}
+
+.licenses-graphics-right p {
+  margin-bottom: 15px;
+  font-family: "lato",sans-serif;
+  font-size: 16px;
+  line-height: 23.6px;
+  font-weight: 400;
+  color: #595566;
+}
+
+
+
+.licenses-graphics-right h3::before {
+  content: "Phosphor Icon : ";
+  font-family: "cabin",sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40.6px;
+  color: #181818;
+}
+
+.licenses-graphics-right h3::after {
+  content: " Licenses";
+  font-family: "cabin",sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #181818;
+}
+
+
+.licenses-photography-content {
+  display: flex;
+  
+  align-items: flex-start;
+}
+
+.licenses-photography-left {
+  flex: 0.35;
+}
+
+.licenses-photography-left h2 {
+  font-size: 45px;
+  font-family: "cabin", sans-serif;
+  font-weight: 700;
+  line-height: 52px;
+  margin: 0;
+}
+
+.licenses-photography-right {
+  flex: 0.7;
+}
+
+.licenses-photography-right p {
+  margin-bottom: 25px;
+  font-family: "lato",sans-serif;
+  font-size: 16px;
+  line-height: 23.6px;
+  font-weight: 400;
+  color: #595566;
+  margin-top: 20px;
+}
+
+
+.licenses-photography-right h3:nth-of-type(1)::before {
+  content: "Pexels : ";
+  font-family: "cabin",sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40.6px;
+  color: #181818;
+}
+.licenses-photography-right h3::after {
+  content: " Licenses";
+  font-family: "cabin",sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #181818;
+}
+.licenses-photography-right h3:nth-of-type(2)::before{
+  content: "Unsplash : ";
+  font-family: "cabin",sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40.6px;
+  color: #181818;
+}
+
+
+
+
+.licenses-font-content {
+  display: flex;
  
+  align-items: flex-start;
+}
+
+.licenses-font-left {
+  flex: 0.35;
+}
+
+.licenses-font-left h2 {
+  font-size: 45px;
+  font-family: "cabin", sans-serif;
+  font-weight: 700;
+  line-height: 52px;
+  margin: 0;
+}
+
+.licenses-font-right {
+  flex: 0.7;
+}
+
+.licenses-font-right p {
+  font-family: "lato",sans-serif;
+  font-size: 16px;
+  line-height: 23.6px;
+  font-weight: 400;
+  color: #595566;
+  margin: 0;
+}
+
+
+@media (max-width: 1024px) {
+  .licenses-content {
+    padding: 80px 15px;
+    gap: 30px;
+  }
+
+  .licenses-graphics-left h2,
+  .licenses-photography-left h2,
+  .licenses-font-left h2 {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .licenses-graphics-right p,
+  .licenses-photography-right p,
+  .licenses-font-right p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .licenses-graphics-right h3::before,
+  .licenses-photography-right h3:nth-of-type(1)::before,
+  .licenses-photography-right h3:nth-of-type(2)::before,
+  .licenses-photography-right h3::after {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .licenses-graphics-content,
+  .licenses-photography-content,
+  .licenses-font-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .licenses-graphics-left,
+  .licenses-photography-left,
+  .licenses-font-left {
+    flex: none;
+    margin-bottom: 20px;
+  }
+
+  .licenses-graphics-right,
+  .licenses-photography-right,
+  .licenses-font-right {
+    flex: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .licenses-content {
+    padding: 60px 10px;
+    gap: 25px;
+  }
+
+  .licenses-graphics-left h2,
+  .licenses-photography-left h2,
+  .licenses-font-left h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .licenses-graphics-right p,
+  .licenses-photography-right p,
+  .licenses-font-right p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .licenses-graphics-right h3::before,
+  .licenses-photography-right h3:nth-of-type(1)::before,
+  .licenses-photography-right h3:nth-of-type(2)::before,
+  .licenses-photography-right h3::after {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .licenses-content {
+    padding: 40px 10px;
+    gap: 20px;
+  }
+
+  .licenses-graphics-left h2,
+  .licenses-photography-left h2,
+  .licenses-font-left h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .licenses-graphics-right p,
+  .licenses-photography-right p,
+  .licenses-font-right p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .licenses-graphics-right h3::before,
+  .licenses-photography-right h3:nth-of-type(1)::before,
+  .licenses-photography-right h3:nth-of-type(2)::before,
+  .licenses-photography-right h3::after {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}

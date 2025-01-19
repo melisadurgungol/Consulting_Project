@@ -286,11 +286,12 @@
   position: absolute;
   right: 1px;
   width: 250px;
-  height: 250px;
+  height: 200px;
   background-image: url("../images/pattern-image-two.png");
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 1;
+  height: 100%;
 }
 
 .newsletter::after {

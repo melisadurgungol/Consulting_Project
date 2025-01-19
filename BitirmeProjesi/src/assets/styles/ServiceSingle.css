@@ -676,17 +676,17 @@ color: #595566;
 .ss-contact-section {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Elemanlar arasında eşit boşluk bırakır */
-  gap: 50px; /* Elemanlar arasında boşluk */
+  justify-content: space-between; 
+  gap: 50px; 
   padding: 90px 20px;
   width: 100%;
-  max-width: 1200px; /* Sayfanın genişliği sınırlanır */
+  max-width: 1200px; 
   margin: 0 auto;
-  flex-wrap: nowrap; /* Alt alta geçmesini engelle */
+  flex-wrap: nowrap; 
 }
 
 .ss-contact-left {
-  flex: 0.4; /* Sol taraf ekranın %40'ını kaplar */
+  flex: 0.4; 
   flex-direction: column;
   gap: 20px;
 }

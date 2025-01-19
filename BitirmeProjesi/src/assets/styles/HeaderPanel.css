@@ -119,20 +119,95 @@
   }
   
  
-  @media (max-width: 768px) {
-    .header-panel {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .page-header-menu {
-      flex-wrap: wrap; 
-      justify-content: center;
-    }
-  
-    .phone-number-button {
-      width: 100%; 
-      justify-content: center;
-    }
+
+@media (max-width: 1024px) {
+  .header-panel {
+    padding: 15px 20px; 
   }
-  
+
+  .header-panel-container {
+    flex-direction: column; 
+    gap: 20px;
+  }
+
+  .header-menu {
+    gap: 20px; 
+  }
+
+  .header-menu-item {
+    font-size: 16px;
+  }
+
+  .phone-number-button img {
+    width: 40px;
+    height: 40px; 
+  }
+
+  .experts-title {
+    font-size: 25px; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .header-panel {
+    flex-direction: column; 
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .header-panel-left {
+    justify-content: center;
+    gap: 5px; 
+  }
+
+  .header-menu {
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px; 
+  }
+
+  .header-menu-item {
+    font-size: 14px; 
+    gap: 5px; 
+  }
+
+  .phone-number-button img {
+    width: 35px;
+    height: 35px; 
+  }
+
+  .experts-title {
+    font-size: 22px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .header-panel {
+    padding: 10px;
+  }
+
+  .header-panel-left {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .header-menu {
+    flex-direction: column;
+    gap: 10px; 
+  }
+
+  .header-menu-item {
+    font-size: 12px; 
+  }
+
+  .phone-number-button img {
+    width: 30px;
+    height: 30px; 
+  }
+
+  .experts-title {
+    font-size: 18px; 
+  }
+}
