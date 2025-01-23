@@ -82,3 +82,182 @@
     }
   }
  
+  .lets-talk-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+  
+  .lets-talk-image img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .lets-talk-content {
+    flex: 1;
+  }
+  
+  .lets-talk-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52.2px;
+    color: #181818;
+    margin-bottom: 10px;
+  }
+  
+  .lets-talk-description {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.6px;
+    color: #595566;
+    margin-bottom: 30px;
+  }
+  
+  .lets-talk-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .lets-talk-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .lets-talk-label {
+    font-family: "Cabin", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.6px;
+    color: #595566;
+    margin-bottom: 8px;
+  }
+  
+  .lets-talk-value {
+    font-family: "Cabin", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.6px;
+    color: #181818;
+  }
+  
+  @media (max-width: 1024px) {
+    .lets-talk-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  
+    .lets-talk-image{
+      max-width: 500px;
+    }
+  
+    .lets-talk-title {
+      font-size: 36px;
+      line-height: 42px;
+    }
+  
+    .lets-talk-description {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  
+    .lets-talk-icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+    }
+  
+    .lets-talk-label, .lets-talk-value {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .lets-talk-container {
+      gap: 30px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  
+    .lets-talk-image{
+      max-width: 350px;
+    }
+  
+    .lets-talk-title {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  
+    .lets-talk-description {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  
+    .lets-talk-icon {
+      width: 35px;
+      height: 35px;
+      margin-right: 10px;
+    }
+  
+    .lets-talk-label, .lets-talk-value {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .lets-talk-container {
+      gap: 20px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      text-align: center; 
+    }
+  
+    .lets-talk-image {
+      max-width: 300px;
+    }
+  
+    .lets-talk-title {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  
+    .lets-talk-description {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  
+    .lets-talk-icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  
+    .lets-talk-label, .lets-talk-value {
+      font-size: 11px;
+      line-height: 13px;
+    }
+  
+    .lets-talk-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center; 
+    }
+  
+    .lets-talk-icon {
+      margin-bottom: 10px;
+    }
+  }
