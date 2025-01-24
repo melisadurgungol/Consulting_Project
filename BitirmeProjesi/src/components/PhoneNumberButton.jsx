@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import "../assets/styles/PhoneNumberButton.css";
 
-const PhoneNumberButton = ({ icon, number, onClick, backgroundColor = "#ffcc4a", textColor = "#181818" }) => {
+const PhoneNumberButton = ({ icon, number, onClick, phoneButtonBackgroundColor = "#fff", textColor = "#181818" }) => {
   return (
     <button
       className="phone-number-button"
       onClick={onClick}
       style={{
-        backgroundColor: backgroundColor,
+        phoneButtonBackgroundColor: phoneButtonBackgroundColor,
         color: textColor,
       }}
     >
@@ -21,11 +21,11 @@ const PhoneNumberButton = ({ icon, number, onClick, backgroundColor = "#ffcc4a",
 };
 
 PhoneNumberButton.propTypes = {
-  icon: PropTypes.node.isRequired, // Telefon ikonu
-  number: PropTypes.string.isRequired, // Telefon numarası
-  onClick: PropTypes.func, // Tıklama olay fonksiyonu
-  backgroundColor: PropTypes.string, // Arka plan rengi
-  textColor: PropTypes.string, // Metin rengi
+  icon: PropTypes.node.isRequired, 
+  number: PropTypes.string.isRequired, 
+  onClick: PropTypes.func, 
+  phoneButtonBackgroundColor: PropTypes.string, 
+  textColor: PropTypes.string, 
 };
 
 export default PhoneNumberButton;

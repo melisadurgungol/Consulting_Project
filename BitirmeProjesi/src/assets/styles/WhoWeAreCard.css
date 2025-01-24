@@ -1,0 +1,109 @@
+.who-we-are-card {
+    width: 100%;
+    max-width: 430px;
+    height: 570px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  
+  .who-we-are-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .content {
+    margin-top: 100px;
+    text-align: left;
+    max-width: 300px;
+  }
+  
+  .content h2 {
+    font-family: "Cabin", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.6px;
+    margin-bottom: 20px;
+  }
+  
+
+
+@media (max-width: 1024px) {
+    .who-we-are-card {
+      height: 500px; 
+      margin-bottom: 80px; 
+      margin-top: 80px; 
+    }
+  
+    .content {
+      margin-top: 80px; 
+      max-width: 280px; 
+    }
+  
+    .content h2 {
+      font-size: 22px; 
+    }
+  
+    .content p {
+      font-size: 14px; 
+      line-height: 21px;
+    }
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .who-we-are-card {
+      max-width: 100%; 
+      height: auto; 
+      margin-bottom: 50px; 
+      margin-top: 50px; 
+    }
+  
+    .content {
+      margin-top: 50px; 
+      max-width: 90%; 
+      text-align: center; 
+    }
+  
+    .content h2 {
+      font-size: 20px; 
+    }
+  
+    .content p {
+      font-size: 14px; 
+      line-height: 20px;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .who-we-are-card {
+      border-radius: 10px; 
+    }
+  
+    .content {
+      margin-top: 40px; 
+      max-width: 100%; 
+    }
+  
+    .content h2 {
+      font-size: 18px; 
+    }
+  
+    .content p {
+      font-size: 12px; 
+      line-height: 18px;
+    }
+  }
+  
