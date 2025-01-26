@@ -4,8 +4,9 @@ import PropTypes from "prop-types";
 function NextButton({ icon, text = "Next", onClick }) {
     return (
       <button className="next-button" onClick={onClick}>
-        <div className="next-button-icon">{icon}</div>
         <span className="next-button-text">{text}</span>
+        <div className="next-button-icon">{icon}</div>
+        
       </button>
     );
   }

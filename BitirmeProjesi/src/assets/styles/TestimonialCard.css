@@ -1,0 +1,156 @@
+.testimonial-card{
+    background-color: #f2f2f2;
+    max-width: 370px;
+    height: auto;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 43px 29px;
+    
+
+}
+
+.testimonial-person{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial-person h2{
+    font-family: "Cabin",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    columns: #181818;
+}
+
+.testimonial-job{
+    background-color: #4eaf4e;
+    border-radius: 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    max-width: 118px;
+    min-height: 26px;
+}
+
+.testimonial-person img{
+    max-width: 100px;
+}
+
+.testimonial-person-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 140px;
+    
+}
+
+.testimonial-info{
+    background-color: #fff;
+    max-width: 320px;
+    padding: 28px 30px;
+    border-radius: 20px;
+}
+
+.testimonial-info p{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.6px;
+    color: #595566;
+}
+
+.testimonial-info img{
+    width: 50px;
+    position: absolute;
+    right: 50px;
+    top: 110px;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial-card {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .testimonial-person {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .testimonial-person img {
+        max-width: 80px;
+    }
+
+    .testimonial-person-info {
+        width: auto;
+        text-align: center;
+    }
+
+    .testimonial-info {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .testimonial-info p {
+        font-size: 14px;
+    }
+
+    .testimonial-info img {
+        width: 40px;
+        right: 20px;
+        top: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .testimonial-card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .testimonial-person {
+        gap: 5px;
+    }
+
+    .testimonial-person h2 {
+        font-size: 18px;
+    }
+
+    .testimonial-job {
+        font-size: 14px;
+        max-width: 100px;
+    }
+
+    .testimonial-person img {
+        max-width: 60px;
+    }
+
+    .testimonial-person-info {
+        width: auto;
+        text-align: center;
+    }
+
+    .testimonial-info {
+        padding: 15px;
+    }
+
+    .testimonial-info p {
+        font-size: 14px;
+    }
+
+    .testimonial-info img {
+        width: 35px;
+        right: 10px;
+        top: 70px;
+    }
+}
